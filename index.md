@@ -3,29 +3,29 @@ layout: default
 ---
 
 <style>
-  /* Fix the default layout spacing and hide theme clutter */
+  /* Fix the default layout spacing and completely hide theme clutter/sidebar constraints */
   header, footer, .sidebar, .project-links, #forkongithub { display: none !important; }
   body { background-color: #f7f9fc; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
   
-  /* Centralization Fix: Centers the wrapper block on the screen */
+  /* Break out of the theme's left-aligned layout constraints */
   .wrapper { 
     max-width: 100% !important; 
     padding: 0 !important; 
     margin: 0 !important;
-    display: flex !important;
-    justify-content: center !important;
   }
   
-  /* Centers all nested child elements inside the section */
+  /* Absolute Center Force: Ensures the layout cards center mathematically on the viewport */
   section { 
     max-width: 900px !important; 
     width: 100% !important;
     padding: 130px 20px 60px 20px !important; 
-    margin: 0 auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     float: none !important; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
   }
   
   /* Top Nav Bar Styling */
@@ -57,7 +57,7 @@ layout: default
     width: 100%;
     max-width: 580px;
     opacity: 0.08; 
-    mix-blend-mode: multiply; /* Keeps the white box outline away */
+    mix-blend-mode: multiply; 
     pointer-events: none; 
     z-index: 1;
   }
