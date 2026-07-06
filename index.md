@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- Complete Style Overhaul (No code required on your part) -->
+<!-- Complete Style Overhaul -->
 <style>
   /* Fix the default layout spacing and hide theme clutter */
   header, footer, .sidebar, .project-links, #forkongithub { display: none !important; }
@@ -34,10 +34,11 @@ layout: default
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 85%;
-    max-width: 550px;
-    opacity: 0.08; /* Subtly blends it into the background */
-    pointer-events: none; /* Allows users to still click the buttons over it */
+    width: 100%;
+    max-width: 650px;
+    opacity: 0.07; 
+    mix-blend-mode: multiply; /* Blends away the image's background box */
+    pointer-events: none; 
     z-index: 1;
   }
   
@@ -75,7 +76,7 @@ layout: default
     <!-- Huge Background Watermark Image -->
     <img src="./logo.png" class="hero-watermark" alt="">
     
-    <!-- Foregound Content Layer -->
+    <!-- Foreground Content Layer -->
     <div class="hero-content">
       <h1 class="main-headline">YouthDrivingChange</h1>
       <p class="main-subheadline">Accelerating the fight for a cure, one mile at a time.</p>
