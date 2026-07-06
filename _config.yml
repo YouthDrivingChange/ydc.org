@@ -1,11 +1,12 @@
-remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: pages-themes/minimal@v0.2.0
 title: YouthDrivingChange
 description: Driving change and making an impact through BikeMS.
 
-# Custom Theme Colors (Medium Blue and Orange accents)
-theme_color: "#1e73be"
-accent_color: "#ff6600"
-
-# Button Links
-donate_url: "https://events.nationalmssociety.org/teams/ydc"
-register_url: "https://events.nationalmssociety.org/index.cfm?fuseaction=register.start&eventID=2736&teamID=100250"
+# Navigation Tabs (This creates the top menu row)
+nav_links:
+  - text: "ABOUT US"
+    url: "/about.html"
+  - text: "UPCOMING EVENTS"
+    url: "/events.html"
+  - text: "NEWSLETTER"
+    url: "/newsletter.html"
