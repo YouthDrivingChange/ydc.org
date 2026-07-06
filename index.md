@@ -16,10 +16,39 @@ layout: default
   .nav-links-left a { color: #333; text-decoration: none; transition: color 0.2s; }
   .nav-links-left a:hover { color: #1e73be; }
   
-  /* Hero Call-To-Action Layout */
-  .hero-container { text-align: center; background: white; border-radius: 12px; padding: 50px 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 40px; }
-  .main-headline { color: #1e73be; font-size: 2.8rem; font-weight: 800; margin: 20px 0 10px 0; }
-  .main-subheadline { color: #555; font-size: 1.2rem; margin-bottom: 35px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+  /* Watermark Hero Container Layout */
+  .hero-container { 
+    position: relative; 
+    text-align: center; 
+    background: white; 
+    border-radius: 12px; 
+    padding: 80px 30px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    margin-bottom: 40px; 
+    overflow: hidden; 
+  }
+  
+  /* The Background Logo Watermark Layer */
+  .hero-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-width: 550px;
+    opacity: 0.08; /* Subtly blends it into the background */
+    pointer-events: none; /* Allows users to still click the buttons over it */
+    z-index: 1;
+  }
+  
+  /* Content Layer forcing text/buttons over the watermark */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .main-headline { color: #1e73be; font-size: 3.2rem; font-weight: 800; margin: 0 0 15px 0; letter-spacing: -0.03em; }
+  .main-subheadline { color: #555; font-size: 1.25rem; margin-bottom: 35px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; font-weight: 500; }
   
   /* Action Buttons */
   .btn-donate { background-color: #ff6600; color: white !important; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(255, 102, 0, 0.3); transition: transform 0.2s; margin: 10px; }
@@ -43,15 +72,18 @@ layout: default
 <!-- Main Content Area -->
 <section>
   <div class="hero-container">
-    <!-- Updated Functional Image Path & Style -->
-    <img src="./logo.png" alt="YouthDrivingChange Logo" style="height: 100px; width: auto; border-radius: 8px;">
+    <!-- Huge Background Watermark Image -->
+    <img src="./logo.png" class="hero-watermark" alt="">
     
-    <h1 class="main-headline">YouthDrivingChange</h1>
-    <p class="main-subheadline">Accelerating the fight for a cure, one mile at a time.</p>
-    
-    <div style="margin-top: 30px;">
-      <a href="https://events.nationalmssociety.org/teams/ydc" class="btn-donate">Donate to BikeMS</a>
-      <a href="https://events.nationalmssociety.org/index.cfm?fuseaction=register.start&eventID=2736&teamID=100250" class="btn-register">Register for the Event</a>
+    <!-- Foregound Content Layer -->
+    <div class="hero-content">
+      <h1 class="main-headline">YouthDrivingChange</h1>
+      <p class="main-subheadline">Accelerating the fight for a cure, one mile at a time.</p>
+      
+      <div style="margin-top: 30px;">
+        <a href="https://events.nationalmssociety.org/teams/ydc" class="btn-donate">Donate to BikeMS</a>
+        <a href="https://events.nationalmssociety.org/index.cfm?fuseaction=register.start&eventID=2736&teamID=100250" class="btn-register">Register for the Event</a>
+      </div>
     </div>
   </div>
 
