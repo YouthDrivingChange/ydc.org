@@ -31,9 +31,9 @@ layout: default
 <div class="custom-nav">
   <div class="nav-links-left">
     <a href="./index.html" style="color: #1e73be;">HOME</a>
-  <a href="./about.html">ABOUT US</a>
-  <a href="./events.html">UPCOMING EVENTS</a>
-  <a href="./newsletter.html">NEWSLETTER</a>
+    <a href="./about.html">ABOUT US</a>
+    <a href="./events.html">UPCOMING EVENTS</a>
+    <a href="./Newsletter.html">NEWSLETTER</a>
   </div>
   <div>
     <a href="https://events.nationalmssociety.org/teams/ydc" style="background-color: #ff6600; color: white; padding: 9px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em;">DONATE</a>
@@ -43,10 +43,11 @@ layout: default
 <!-- Main Content Area -->
 <section>
   <div class="hero-container">
-    <img src="image_fab823.png" alt="YouthDrivingChange Logo" style="max-width: 220px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <!-- Updated Functional Image Path & Style -->
+    <img src="./logo.png" alt="YouthDrivingChange Logo" style="height: 100px; width: auto; border-radius: 8px;">
     
     <h1 class="main-headline">YouthDrivingChange</h1>
-    <p class="main-subheadline">Driving change and making an impact through BikeMS.</p>
+    <p class="main-subheadline">Accelerating the fight for a cure, one mile at a time.</p>
     
     <div style="margin-top: 30px;">
       <a href="https://events.nationalmssociety.org/teams/ydc" class="btn-donate">Donate to BikeMS</a>
@@ -54,12 +55,13 @@ layout: default
     </div>
   </div>
 
- <div style="background: white; border-radius: 12px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); line-height: 1.8; color: #444;">
-  <h3 style="color: #333; font-weight: 700; margin-top: 0; font-size: 1.5rem; letter-spacing: -0.02em;">Driven by Youth. Fueled by Community.</h3>
-  <p style="font-size: 1.05rem; color: #555; margin-bottom: 20px;">
-    YouthDrivingChange was founded in 2022 to transform a personal family tradition into a powerful, youth-led movement. We manage, organize, and execute strategic fundraising campaigns and team rides for BikeMS to accelerate the fight for a multiple sclerosis cure.
-  </p>
-  <p style="font-size: 1.05rem; color: #555; margin-bottom: 0;">
-    Whether you are looking to check out our <strong>Upcoming Events</strong>, read our story in <strong>About Us</strong>, or subscribe to our <strong>Newsletter</strong> for real-time milestones, you are part of the momentum. Explore the navigation links above to find out how you can ride, donate, or help us spread powerful awareness.
-  </p>
-</div>
+  <div style="background: white; border-radius: 12px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); line-height: 1.8; color: #444;">
+    <h3 style="color: #333; font-weight: 700; margin-top: 0; font-size: 1.5rem; letter-spacing: -0.02em;">Driven by Youth. Fueled by Community.</h3>
+    <p style="font-size: 1.05rem; color: #555; margin-bottom: 20px;">
+      YouthDrivingChange was founded in 2022 to transform a personal family tradition into a powerful, youth-led movement. We manage, organize, and execute strategic fundraising campaigns and team rides for BikeMS to accelerate the fight for a multiple sclerosis cure.
+    </p>
+    <p style="font-size: 1.05rem; color: #555; margin-bottom: 0;">
+      Whether you are looking to check out our <strong>Upcoming Events</strong>, read our story in <strong>About Us</strong>, or subscribe to our <strong>Newsletter</strong> for real-time milestones, you are part of the momentum. Explore the navigation links above to find out how you can ride, donate, or help us spread powerful awareness.
+    </p>
+  </div>
+</section>
