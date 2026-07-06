@@ -3,13 +3,3 @@ title: YouthDrivingChange
 description: Driving change and making an impact through BikeMS.
 
 permalink: /:basename.html
-
-nav_links:
-  - text: "HOME"
-    url: "./index.html"
-  - text: "ABOUT US"
-    url: "./about.html"
-  - text: "UPCOMING EVENTS"
-    url: "./events.html"
-  - text: "NEWSLETTER"
-    url: "./newsletter.html"
