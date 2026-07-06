@@ -13,21 +13,4 @@ layout: default
 
 ---
 
-## About YouthDrivingChange
-Welcome to YouthDrivingChange! We are dedicated to organizing, riding, and raising critical funds for the National MS Society through BikeMS. Every dollar raised helps fuel groundbreaking research and provides life-changing services for people living with multiple sclerosis.
-
----
-
-## Upcoming Event Details
-Stay tuned for details regarding our upcoming BikeMS rides, team schedules, and logistics. Whether you are riding with us or cheering us on from the sidelines, your support makes all the difference.
-
----
-
-## Join Our Newsletter
-Want to stay updated on our upcoming rides, fundraising milestones, and team announcements? Drop your email below to join our community.
-
-<form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" style="margin-top: 20px;">
-  <label style="display: block; margin-bottom: 8px; font-weight: bold;">Email Address:</label>
-  <input type="email" name="email" required style="padding: 10px; width: 100%; max-width: 400px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
-  <button type="submit" style="background-color: #ff6600; color: white; padding: 10px 20px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; display: block;">Subscribe</button>
-</form>
+Welcome to the official hub for YouthDrivingChange. Use the tabs above to explore our mission, check out our upcoming ride schedule, or subscribe to our community newsletter. Your support directly powers the fight against MS!
