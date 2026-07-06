@@ -36,7 +36,7 @@ layout: default
   <!-- Call To Action Box -->
   <div style="background-color: #f4f7fa; border-radius: 8px; padding: 30px; margin-top: 40px; border-left: 5px solid #1e73be;">
     <h3 style="color: #1e73be; font-weight: 700; margin-top: 0; margin-bottom: 10px;">Be Part of the Change</h3>
-    <p style="margin-bottom: 25px;">What started as a family tradition has grown into a mission to protect our friends, families, and community. The fight to cure MS requires all of us. Join YouthDrivingChange today—help us fuel breakthrough research, spread powerful awareness, and bring us one step closer to a cure.</p>
+    <p style="margin-bottom: 25px;">What started as a family tradition has grown into a mission to protect our friends, families, and community. The fight to cure MS requires all of us. Join YouthDrivingChange today, help us fuel breakthrough research, spread powerful awareness, and bring us one step closer to a cure.</p>
     
     <div style="display: flex; flex-wrap: wrap; gap: 15px;">
       <a href="https://events.nationalmssociety.org/index.cfm?fuseaction=register.start&eventID=2736&teamID=100250" style="background-color: #1e73be; color: white !important; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 6px; font-size: 1rem; box-shadow: 0 4px 10px rgba(30, 115, 190, 0.2);">Register to Ride</a>
