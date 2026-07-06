@@ -26,7 +26,7 @@ layout: default
 
   <h3 style="color: #333; font-weight: 700; margin-top: 30px;">Our Story</h3>
   <p>YouthDrivingChange started long before a team was ever officially formed. Growing up, I watched my mom ride in the BikeMS event year after year, witnessing firsthand the incredible power of a community uniting for a cure.</p>
-  <p>In 2022, the moment I was finally old enough to start a team of my own, I didn't hesitate. What began as a mission rooted in family tradition has since become deeply personal. Today, I have close friends who are living with multiple sclerosis. Seeing their daily strength fuels our team's urgency. We aren't just riding for a cause anymore, we are riding for our friends, our families, and a future free of MS.</p>
+  <p>In 2022, the moment I was finally old enough to start a team of my own, I didn't hesitate. What began as a mission rooted in family tradition has since become deeply personal. Today, YouthDrivingChange has raised over $188,000 and I have close friends who are living with multiple sclerosis. Seeing their daily strength fuels our team's urgency. We aren't just riding for a cause anymore, we are riding for our friends, our families, and a future free of MS.</p>
 
   <hr style="border: 0; border-top: 1px solid #eaeaea; margin: 35px 0;">
 
