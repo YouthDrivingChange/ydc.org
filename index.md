@@ -55,8 +55,12 @@ layout: default
     </div>
   </div>
 
-  <div style="background: white; border-radius: 12px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); line-height: 1.8; color: #444;">
-    <h3 style="color: #333; font-weight: 700; margin-top: 0; font-size: 1.4rem;">Welcome to our community</h3>
-    <p>Welcome to the official hub for YouthDrivingChange. Use the navigation links at the top left to explore our mission, check out our ride schedules, or subscribe to our community newsletter. Your support directly powers the fight against multiple sclerosis!</p>
-  </div>
-</section>
+ <div style="background: white; border-radius: 12px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); line-height: 1.8; color: #444;">
+  <h3 style="color: #333; font-weight: 700; margin-top: 0; font-size: 1.5rem; letter-spacing: -0.02em;">Driven by Youth. Fueled by Community.</h3>
+  <p style="font-size: 1.05rem; color: #555; margin-bottom: 20px;">
+    YouthDrivingChange was founded in 2022 to transform a personal family tradition into a powerful, youth-led movement. We manage, organize, and execute strategic fundraising campaigns and team rides for BikeMS to accelerate the fight for a multiple sclerosis cure.
+  </p>
+  <p style="font-size: 1.05rem; color: #555; margin-bottom: 0;">
+    Whether you are looking to check out our <strong>Upcoming Events</strong>, read our story in <strong>About Us</strong>, or subscribe to our <strong>Newsletter</strong> for real-time milestones, you are part of the momentum. Explore the navigation links above to find out how you can ride, donate, or help us spread powerful awareness.
+  </p>
+</div>
