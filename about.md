@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- Complete Style Overhaul -->
 <style>
   /* Fix the default layout spacing and completely hide theme clutter/sidebar constraints */
   header, footer, .sidebar, .project-links, #forkongithub { display: none !important; }
@@ -27,8 +28,8 @@ layout: default
   section { 
     max-width: 900px !important; 
     width: 90% !important;
-    padding: 60px 20px 60px 20px !important; /* Adjusted to exactly 60px top padding */
-    margin: 0 auto !important; 
+    padding: 0px 20px 60px 20px !important; 
+    margin: 40px auto 0 auto !important; /* Adjusted top margin to exactly 40px */
     float: none !important; 
     clear: both !important;
     display: flex !important;
@@ -70,6 +71,9 @@ layout: default
     text-align: left; 
     margin-bottom: 30px;
   }
+  .info-card:first-of-type {
+    margin-top: 40px !important; /* Forces a crisp 40px gap directly under the nav bar */
+  }
   .info-card h1 { color: #1e73be; font-size: 2.5rem; font-weight: 800; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.02em; }
   .info-card h3 { color: #333; font-weight: 700; font-size: 1.4rem; margin-top: 0; margin-bottom: 15px; }
   .info-card .intro-text { font-size: 1.15rem; font-weight: 600; color: #333; line-height: 1.6; margin-bottom: 0; }
@@ -90,12 +94,14 @@ layout: default
 
   /* Mobile Adjustments */
   @media (max-width: 768px) {
-    section { padding-top: 150px !important; } 
+    section { padding-top: 130px !important; } 
+    .info-card:first-of-type { margin-top: 0px !important; }
     .custom-nav { padding: 15px 20px; flex-direction: column; gap: 15px; text-align: center; }
     .nav-links-left { gap: 15px; flex-wrap: wrap; justify-content: center; }
   }
 </style>
 
+<!-- Clean White Navigation Bar Layer -->
 <div class="custom-nav">
   <div class="nav-links-left">
     <a href="./index.html">HOME</a>
@@ -108,8 +114,10 @@ layout: default
   </div>
 </div>
 
+<!-- Main Content Area Container -->
 <section>
 
+  <!-- About Card (At the top, title included inside) -->
   <div class="info-card">
     <h1>About YouthDrivingChange</h1>
     <p class="intro-text">
@@ -117,6 +125,7 @@ layout: default
     </p>
   </div>
 
+  <!-- Our Story Card -->
   <div class="info-card">
     <h3>Our Story</h3>
     <p>
@@ -127,6 +136,7 @@ layout: default
     </p>
   </div>
 
+  <!-- Broader Impact Card -->
   <div class="info-card">
     <h3>Broader Impact</h3>
     <p>
@@ -134,6 +144,7 @@ layout: default
     </p>
   </div>
 
+  <!-- Be Part of the Change Card -->
   <div class="info-card cta-card">
     <h4>Be Part of the Change</h4>
     <p>
