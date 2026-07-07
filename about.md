@@ -81,7 +81,7 @@ layout: default
   <div style="background: white; border-radius: 12px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); line-height: 1.8; color: #444; width: 100%; box-sizing: border-box; text-align: left; margin-bottom: 40px;">
     <h3 style="color: #333; font-weight: 700; font-size: 1.4rem; margin-top: 0; margin-bottom: 15px;">Broader Impact</h3>
     <p style="font-size: 1.05rem; color: #555; margin-bottom: 0;">
-      Beyond the immediate funds we raise, YouthDrivingChange is heavily committed to fostering a strong, interconnected community. We engage local schools, small businesses, and passionate families to raise broader programmatic awareness about multiple sclerosis. By empowering young advocates to lead high-visibility campaigns, we show our community that driving change isn't limited by age—it is driven by collaborative momentum.
+      The MS society has supported nearly 450,000 people since 2017 with highly skilled, compassionate professionals who help people with MS get the resources, information, and support they need. They have established nearly 400 partnerships with high-quality MS care centers and have invested more than $1.1 billion in MS research since 1946.
     </p>
   </div>
 
