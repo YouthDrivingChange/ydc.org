@@ -5,23 +5,25 @@ layout: default
 <style>
   /* Fix the default layout spacing and completely hide theme clutter/sidebar constraints */
   header, footer, .sidebar, .project-links, #forkongithub { display: none !important; }
-  body { background-color: #f7f9fc; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  body { background-color: #f7f9fc; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; width: 100%; }
   
-  /* Break out of the theme's left-aligned layout constraints */
+  /* CRITICAL FIX: Blows open the theme's default layout container box to span 100% of the screen width */
   .wrapper { 
     max-width: 100% !important; 
-    padding: 0 !important; 
-    margin: 0 !important;
+    width: 100% !important;
+    margin: 0 !important; 
+    padding: 0 !important;
+    display: block !important;
   }
   
-  /* Absolute Center Force: Ensures the layout cards center mathematically on the viewport */
+  /* Absolute Center Force: Centers the layout container right in the middle of the wide viewport */
   section { 
     max-width: 900px !important; 
-    width: 100% !important;
+    width: 90% !important;
     padding: 130px 20px 60px 20px !important; 
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin: 0 auto !important; /* Math calculations to center horizontally */
     float: none !important; 
+    clear: both !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
