@@ -2,11 +2,17 @@
 layout: default
 ---
 
-<!-- Complete Style Overhaul -->
 <style>
   /* Fix the default layout spacing and completely hide theme clutter/sidebar constraints */
   header, footer, .sidebar, .project-links, #forkongithub { display: none !important; }
-  body { background-color: #f7f9fc; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; width: 100%; }
+  
+  body { 
+    background-color: #f7f9fc; 
+    margin: 0; 
+    padding: 0; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+    width: 100%; 
+  }
   
   /* Blows open the theme's default layout container box to span 100% of the screen width */
   .wrapper { 
@@ -27,80 +33,121 @@ layout: default
     clear: both !important;
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
+    align-items: stretch !important; /* Fixed: allows cards to span full 900px width smoothly */
     box-sizing: border-box !important;
   }
   
   /* Top Nav Bar Styling */
-  .custom-nav { background-color: white; padding: 15px 40px; border-bottom: 1px solid #eaeaea; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0; left: 0; right: 0; z-index: 9999; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+  .custom-nav { 
+    background-color: white; 
+    padding: 15px 40px; 
+    border-bottom: 1px solid #eaeaea; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 9999; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+  }
   .nav-links-left { display: flex; gap: 35px; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; }
   .nav-links-left a { color: #333; text-decoration: none; transition: color 0.2s; }
   .nav-links-left a:hover { color: #1e73be; }
+  .nav-links-left .active { color: #1e73be; }
+
+  /* Content Cards */
+  .info-card {
+    background: white; 
+    border-radius: 12px; 
+    padding: 40px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    line-height: 1.8; 
+    color: #444; 
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: left; 
+    margin-bottom: 30px;
+  }
+  .info-card h1 { color: #1e73be; font-size: 2.5rem; font-weight: 800; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.02em; }
+  .info-card h3 { color: #333; font-weight: 700; font-size: 1.4rem; margin-top: 30px; margin-bottom: 15px; }
+  .info-card .intro-text { font-size: 1.15rem; font-weight: 600; color: #333; line-height: 1.6; margin-bottom: 25px; }
+  .info-card p { font-size: 1.05rem; color: #555; margin-bottom: 20px; }
+  .info-card p:last-child { margin-bottom: 0; }
+
+  /* Call to Action Section */
+  .cta-section { text-align: center; width: 100%; margin-bottom: 20px; }
+  .cta-section h3 { color: #333; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.02em; }
+  .cta-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 35px; }
+  .cta-message { max-width: 650px; margin: 0 auto; padding: 0 10px; }
+  .cta-message h4 { color: #333; font-weight: 700; font-size: 1.25rem; margin-top: 0; margin-bottom: 12px; }
+  .cta-message p { font-size: 1.05rem; color: #666; line-height: 1.7; margin: 0; }
 
   /* Action Buttons */
+  .btn-donate-nav { background-color: #ff6600; color: white !important; padding: 9px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em; }
   .btn-donate { background-color: #ff6600; color: white !important; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(255, 102, 0, 0.2); transition: transform 0.2s; margin: 8px; }
   .btn-register { background-color: #1e73be; color: white !important; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(30, 115, 190, 0.2); transition: transform 0.2s; margin: 8px; }
   .btn-donate:hover, .btn-register:hover { transform: translateY(-2px); text-decoration: none; }
+
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    section { padding-top: 180px !important; } /* Gives space if nav links wrap on small screens */
+    .custom-nav { padding: 15px 20px; flex-direction: column; gap: 15px; text-align: center; }
+    .nav-links-left { gap: 15px; flex-wrap: wrap; justify-content: center; }
+  }
 </style>
 
-<!-- Clean White Navigation Bar Layer -->
 <div class="custom-nav">
   <div class="nav-links-left">
     <a href="./index.html">HOME</a>
-    <a href="./about.html" style="color: #1e73be;">ABOUT US</a>
+    <a href="./about.html" class="active">ABOUT US</a>
     <a href="./events.html">UPCOMING EVENTS</a>
     <a href="./newsletter.html">NEWSLETTER</a>
   </div>
   <div>
-    <a href="https://events.nationalmssociety.org/teams/ydc" style="background-color: #ff6600; color: white; padding: 9px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em;">DONATE</a>
+    <a href="https://events.nationalmssociety.org/teams/ydc" class="btn-donate-nav">DONATE</a>
   </div>
 </div>
 
-<!-- Main Content Area Container -->
 <section>
-  <!-- Our Story Card -->
-  <div style="background: white; border-radius: 12px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); line-height: 1.8; color: #444; width: 100%; box-sizing: border-box; text-align: left; margin-bottom: 30px;">
-    <h1 style="color: #1e73be; font-size: 2.5rem; font-weight: 800; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.02em;">About YouthDrivingChange</h1>
+  <div class="info-card">
+    <h1>About YouthDrivingChange</h1>
     
-    <p style="font-size: 1.15rem; font-weight: 600; color: #333; line-height: 1.6; margin-bottom: 25px;">
+    <p class="intro-text">
       YouthDrivingChange is dedicated to changing lives by raising critical funds for multiple sclerosis research, accelerating the fight for a cure, and spreading powerful awareness throughout our community.
     </p>
     
-    <h3 style="color: #333; font-weight: 700; font-size: 1.4rem; margin-top: 30px; margin-bottom: 15px;">Our Story</h3>
+    <h3>Our Story</h3>
     
-    <p style="font-size: 1.05rem; color: #555; margin-bottom: 20px;">
+    <p>
       YouthDrivingChange started long before a team was ever officially formed. Growing up, I watched my mom ride in the BikeMS event year after year, witnessing firsthand the incredible power of a community uniting for a cure.
     </p>
     
-    <p style="font-size: 1.05rem; color: #555; margin-bottom: 0;">
+    <p>
       In 2022, the moment I was finally old enough to start a team of my own, I didn't hesitate. What began as a mission rooted in family tradition has since become deeply personal. Today, YouthDrivingChange has raised over $188,000 and I have close friends who are living with multiple sclerosis. Every dollar raised, every mile logged, brings us closer to a world free of MS.
     </p>
   </div>
 
-  <!-- Broader Impact Card -->
-  <div style="background: white; border-radius: 12px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); line-height: 1.8; color: #444; width: 100%; box-sizing: border-box; text-align: left; margin-bottom: 40px;">
-    <h3 style="color: #333; font-weight: 700; font-size: 1.4rem; margin-top: 0; margin-bottom: 15px;">Broader Impact</h3>
-    <p style="font-size: 1.05rem; color: #555; margin-bottom: 0;">
+  <div class="info-card" style="margin-bottom: 40px;">
+    <h3>Broader Impact</h3>
+    <p>
       The MS society has supported nearly 450,000 people since 2017 with highly skilled, compassionate professionals who help people with MS get the resources, information, and support they need. They have established nearly 400 partnerships with high-quality MS care centers and have invested more than $1.1 billion in MS research since 1946.
     </p>
   </div>
 
-  <!-- Action Call Buttons Container -->
-  <!-- Action Call Buttons Container -->
-  <div style="text-align: center; width: 100%; margin-bottom: 20px;">
-    <h3 style="color: #333; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.02em;">Join the Momentum</h3>
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 35px;">
+  <div class="cta-section">
+    <h3>Join the Momentum</h3>
+    <div class="cta-buttons">
       <a href="https://events.nationalmssociety.org/index.cfm?fuseaction=register.start&eventID=2736&teamID=100250" class="btn-register">Register to Ride</a>
       <a href="https://events.nationalmssociety.org/teams/ydc" class="btn-donate">Support Our Team</a>
     </div>
 
-    <!-- New Call to Action Message -->
-    <div style="max-width: 650px; margin: 0 auto; padding: 0 10px;">
-      <h4 style="color: #333; font-weight: 700; font-size: 1.25rem; margin-top: 0; margin-bottom: 12px;">Be Part of the Change</h4>
-      <p style="font-size: 1.05rem; color: #666; line-height: 1.7; margin: 0;">
+    <div class="cta-message">
+      <h4>Be Part of the Change</h4>
+      <p>
         What started as a family tradition has grown into a mission to protect our friends, families, and community. The fight to cure MS requires all of us. Join YouthDrivingChange today, help us fuel breakthrough research, spread powerful awareness, and bring us one step closer to a cure.
       </p>
     </div>
-  </div>
   </div>
 </section>
