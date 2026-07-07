@@ -37,6 +37,17 @@ layout: default
     align-items: stretch !important;
     box-sizing: border-box !important;
   }
+
+  /* Main Page Header Setup */
+  .page-title { 
+    color: #1e73be; 
+    font-size: 2.75rem; 
+    font-weight: 800; 
+    margin-top: 0; 
+    margin-bottom: 25px; 
+    letter-spacing: -0.02em; 
+    text-align: left; 
+  }
   
   /* Top Nav Bar Styling */
   .custom-nav { 
@@ -71,13 +82,11 @@ layout: default
     text-align: left; 
     margin-bottom: 30px;
   }
-  .info-card h1 { color: #1e73be; font-size: 2.5rem; font-weight: 800; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.02em; }
-  .info-card h3 { color: #333; font-weight: 700; font-size: 1.4rem; margin-top: 30px; margin-bottom: 15px; }
-  .info-card .intro-text { font-size: 1.15rem; font-weight: 600; color: #333; line-height: 1.6; margin-bottom: 25px; }
-  .info-card p { font-size: 1.05rem; color: #555; margin-bottom: 20px; }
-  .info-card p:last-child { margin-bottom: 0; }
+  .info-card h3 { color: #333; font-weight: 700; font-size: 1.4rem; margin-top: 0; margin-bottom: 15px; }
+  .info-card .intro-text { font-size: 1.15rem; font-weight: 600; color: #333; line-height: 1.6; margin-bottom: 0; }
+  .info-card p { font-size: 1.05rem; color: #555; margin-top: 20px; margin-bottom: 0; }
 
-  /* New Bottom Call to Action Formatting */
+  /* Bottom Call to Action Formatting */
   .cta-card { text-align: center; }
   .cta-card h4 { color: #333; font-weight: 700; font-size: 1.5rem; margin-top: 0; margin-bottom: 15px; letter-spacing: -0.02em; }
   .cta-card p { font-size: 1.05rem; color: #555; line-height: 1.7; max-width: 750px; margin: 0 auto 30px auto; }
@@ -112,20 +121,23 @@ layout: default
 
 <!-- Main Content Area Container -->
 <section>
-  <!-- Our Story Card -->
+
+  <!-- Global Page Header (Moved to top, outside of cards) -->
+  <h1 class="page-title">About YouthDrivingChange</h1>
+
+  <!-- Mission Statement Card -->
   <div class="info-card">
-    <h1>About YouthDrivingChange</h1>
-    
     <p class="intro-text">
       YouthDrivingChange is dedicated to changing lives by raising critical funds for multiple sclerosis research, accelerating the fight for a cure, and spreading powerful awareness throughout our community.
     </p>
-    
+  </div>
+
+  <!-- Our Story Card -->
+  <div class="info-card">
     <h3>Our Story</h3>
-    
-    <p>
+    <p style="margin-top: 0;">
       YouthDrivingChange started long before a team was ever officially formed. Growing up, I watched my mom ride in the BikeMS event year after year, witnessing firsthand the incredible power of a community uniting for a cure.
     </p>
-    
     <p>
       In 2022, the moment I was finally old enough to start a team of my own, I didn't hesitate. What began as a mission rooted in family tradition has since become deeply personal. Today, YouthDrivingChange has raised over $188,000 and I have close friends who are living with multiple sclerosis. Every dollar raised, every mile logged, brings us closer to a world free of MS.
     </p>
@@ -134,7 +146,7 @@ layout: default
   <!-- Broader Impact Card -->
   <div class="info-card">
     <h3>Broader Impact</h3>
-    <p>
+    <p style="margin-top: 0;">
       The MS society has supported nearly 450,000 people since 2017 with highly skilled, compassionate professionals who help people with MS get the resources, information, and support they need. They have established nearly 400 partnerships with high-quality MS care centers and have invested more than $1.1 billion in MS research since 1946.
     </p>
   </div>
