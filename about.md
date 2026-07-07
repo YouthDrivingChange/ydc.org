@@ -2,7 +2,6 @@
 layout: default
 ---
 
-<!-- Complete Style Overhaul -->
 <style>
   /* Fix the default layout spacing and completely hide theme clutter/sidebar constraints */
   header, footer, .sidebar, .project-links, #forkongithub { display: none !important; }
@@ -28,7 +27,7 @@ layout: default
   section { 
     max-width: 900px !important; 
     width: 90% !important;
-    padding: 130px 20px 60px 20px !important; 
+    padding: 110px 20px 60px 20px !important; /* Adjusted slightly to tuck neatly under the navbar */
     margin: 0 auto !important; 
     float: none !important; 
     clear: both !important;
@@ -36,17 +35,6 @@ layout: default
     flex-direction: column !important;
     align-items: stretch !important;
     box-sizing: border-box !important;
-  }
-
-  /* Main Page Header Setup */
-  .page-title { 
-    color: #1e73be; 
-    font-size: 2.75rem; 
-    font-weight: 800; 
-    margin-top: 0; 
-    margin-bottom: 25px; 
-    letter-spacing: -0.02em; 
-    text-align: left; 
   }
   
   /* Top Nav Bar Styling */
@@ -82,9 +70,11 @@ layout: default
     text-align: left; 
     margin-bottom: 30px;
   }
+  .info-card h1 { color: #1e73be; font-size: 2.5rem; font-weight: 800; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.02em; }
   .info-card h3 { color: #333; font-weight: 700; font-size: 1.4rem; margin-top: 0; margin-bottom: 15px; }
   .info-card .intro-text { font-size: 1.15rem; font-weight: 600; color: #333; line-height: 1.6; margin-bottom: 0; }
-  .info-card p { font-size: 1.05rem; color: #555; margin-top: 20px; margin-bottom: 0; }
+  .info-card p { font-size: 1.05rem; color: #555; margin-bottom: 20px; }
+  .info-card p:last-child { margin-bottom: 0; }
 
   /* Bottom Call to Action Formatting */
   .cta-card { text-align: center; }
@@ -106,7 +96,6 @@ layout: default
   }
 </style>
 
-<!-- Clean White Navigation Bar Layer -->
 <div class="custom-nav">
   <div class="nav-links-left">
     <a href="./index.html">HOME</a>
@@ -119,23 +108,19 @@ layout: default
   </div>
 </div>
 
-<!-- Main Content Area Container -->
 <section>
 
-  <!-- Global Page Header (Moved to top, outside of cards) -->
-  <h1 class="page-title">About YouthDrivingChange</h1>
-
-  <!-- Mission Statement Card -->
   <div class="info-card">
+    <h1>About YouthDrivingChange</h1>
+    <h3>Our Mission</h3>
     <p class="intro-text">
       YouthDrivingChange is dedicated to changing lives by raising critical funds for multiple sclerosis research, accelerating the fight for a cure, and spreading powerful awareness throughout our community.
     </p>
   </div>
 
-  <!-- Our Story Card -->
   <div class="info-card">
     <h3>Our Story</h3>
-    <p style="margin-top: 0;">
+    <p>
       YouthDrivingChange started long before a team was ever officially formed. Growing up, I watched my mom ride in the BikeMS event year after year, witnessing firsthand the incredible power of a community uniting for a cure.
     </p>
     <p>
@@ -143,15 +128,13 @@ layout: default
     </p>
   </div>
 
-  <!-- Broader Impact Card -->
   <div class="info-card">
     <h3>Broader Impact</h3>
-    <p style="margin-top: 0;">
+    <p>
       The MS society has supported nearly 450,000 people since 2017 with highly skilled, compassionate professionals who help people with MS get the resources, information, and support they need. They have established nearly 400 partnerships with high-quality MS care centers and have invested more than $1.1 billion in MS research since 1946.
     </p>
   </div>
 
-  <!-- Be Part of the Change Card -->
   <div class="info-card cta-card">
     <h4>Be Part of the Change</h4>
     <p>
