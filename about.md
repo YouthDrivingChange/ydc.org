@@ -27,7 +27,7 @@ layout: default
   section { 
     max-width: 900px !important; 
     width: 90% !important;
-    padding: 110px 20px 60px 20px !important; /* Adjusted slightly to tuck neatly under the navbar */
+    padding: 60px 20px 60px 20px !important; /* Adjusted to exactly 60px top padding */
     margin: 0 auto !important; 
     float: none !important; 
     clear: both !important;
@@ -90,7 +90,7 @@ layout: default
 
   /* Mobile Adjustments */
   @media (max-width: 768px) {
-    section { padding-top: 180px !important; } 
+    section { padding-top: 150px !important; } 
     .custom-nav { padding: 15px 20px; flex-direction: column; gap: 15px; text-align: center; }
     .nav-links-left { gap: 15px; flex-wrap: wrap; justify-content: center; }
   }
@@ -112,7 +112,6 @@ layout: default
 
   <div class="info-card">
     <h1>About YouthDrivingChange</h1>
-    <h3>Our Mission</h3>
     <p class="intro-text">
       YouthDrivingChange is dedicated to changing lives by raising critical funds for multiple sclerosis research, accelerating the fight for a cure, and spreading powerful awareness throughout our community.
     </p>
