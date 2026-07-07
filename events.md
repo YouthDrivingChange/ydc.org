@@ -102,7 +102,7 @@ layout: default
   <div class="nav-links-left">
     <a href="./index.html">HOME</a>
     <a href="./about.html">ABOUT US</a>
-    <a href="./events.html" style="color: #1e73be;">UPCOMING EVENTS</a> <!-- Kept active color here -->
+    <a href="./events.html" style="color: #1e73be;">UPCOMING EVENTS</a>
     <a href="./newsletter.html">NEWSLETTER</a>
   </div>
   <div>
@@ -110,41 +110,41 @@ layout: default
   </div>
 </div>
 
-<section style="margin-top: 40px;"> <!-- Pushes starting content below fixed nav -->
+<section style="margin-top: 40px;">
   
   <!-- Header Block -->
   <div class="content-card">
     <h2 style="color: #1e73be; font-size: 2.5rem; font-weight: 800; margin: 0 0 15px 0; letter-spacing: -0.03em;">Upcoming Events</h2>
     <p style="font-size: 1.1rem; color: #555; margin: 0;">
-      Stay tuned for details regarding our upcoming BikeMS rides, team schedules, and logistics. Whether you are riding with us or cheering us on from the sidelines, your support makes all the difference.
+      Stay tuned for details regarding our upcoming campaign rides, team schedules, and logistics. Whether you are riding hard with us on the pavement, tackling the gravel trails, or cheering us on from the sidelines, your support builds our momentum.
     </p>
   </div>
 
   <!-- Events List Card -->
   <div class="content-card">
-    <h3 style="color: #333; font-weight: 700; margin-top: 0; font-size: 1.5rem; letter-spacing: -0.02em; border-bottom: 2px solid #f7f9fc; padding-bottom: 15px;">Ride & Event Schedule</h3>
+    <h3 style="color: #333; font-weight: 700; margin-top: 0; font-size: 1.5rem; letter-spacing: -0.02em; border-bottom: 2px solid #f7f9fc; padding-bottom: 15px;">Official Team Schedule</h3>
     
-    <!-- Event 1 -->
+    <!-- Event 1: Bike MS New Bern -->
     <div class="event-item">
       <div style="padding-right: 20px;">
-        <span class="event-date">SEPTEMBER 12, 2026</span>
-        <h4 class="event-title">Annual BikeMS: City to Shore Ride</h4>
-        <p class="event-description">Join the team for our biggest ride of the year. Logistics, starting lines, and hotel block details inside.</p>
+        <span class="event-date">SEPTEMBER 19 - 20, 2026</span>
+        <h4 class="event-title">Bike MS: Historic New Bern Ride</h4>
+        <p class="event-description">Our primary campaign event of the year. Featuring scenic coastal architecture and a deep-woods gravel trail experience through Croatan National Forest. All routes kick off from Union Point Park.</p>
       </div>
       <div>
-        <a href="#" class="btn-details">Event Details</a>
+        <a href="https://events.nationalmssociety.org/2736" target="_blank" class="btn-details">Event Details</a>
       </div>
     </div>
 
-    <!-- Event 2 -->
+    <!-- Event 2: Raleigh Turkey Trot -->
     <div class="event-item">
       <div style="padding-right: 20px;">
-        <span class="event-date">OCTOBER 04, 2026</span>
-        <h4 class="event-title">Team Prep & Gear Check</h4>
-        <p class="event-description">A mandatory meetup for riders to sync on safety, route variations, and kit distributions.</p>
+        <span class="event-date">NOVEMBER 26, 2026 (THANKSGIVING MORNING)</span>
+        <h4 class="event-title">Raleigh Turkey Trot</h4>
+        <p class="event-description">Kick off your Thanksgiving morning with the Triangle's favorite holiday tradition. Join us out at Ridgewood Shopping Center to run, walk, and raise critical funds to strike out multiple sclerosis.</p>
       </div>
       <div>
-        <a href="#" class="btn-details">Event Details</a>
+        <a href="https://ridgewoodturkeytrot.itsyourrace.com/" target="_blank" class="btn-details">Event Details</a>
       </div>
     </div>
 
