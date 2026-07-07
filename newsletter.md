@@ -57,11 +57,10 @@ layout: default
 
 <!-- Main Content Area -->
 <section>
-  <!-- Integrated Substack Section Styled as a Clean Card -->
-  <div style="background: white; border-radius: 12px; padding: 40px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; width: 100%; box-sizing: border-box; margin-top: 20px;">
+ <!-- Integrated Substack Section Styled as a Clean Card -->
+  <div style="background: white; border-radius: 12px; padding: 40px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; width: 100%; box-sizing: border-box;">
     <h3 style="color: #333; font-weight: 700; font-size: 1.6rem; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.02em;">Subscribe for Campaign Milestones</h3>
     <div style="display: flex; justify-content: center; width: 100%; overflow: hidden;">
       <iframe src="https://youthdrivingchange.substack.com/embed" width="480" height="320" style="border: none; background: transparent;" frameborder="0" scrolling="no"></iframe>
     </div>
-  </div>
 </section>
