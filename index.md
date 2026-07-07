@@ -17,11 +17,11 @@ layout: default
     display: block !important;
   }
   
-  /* Absolute Center Force: Adjusted top padding from 130px to 80px to pull content up under the nav */
+  /* Absolute Center Force: Tightened top padding to 60px to bring cards closer to the nav */
   section { 
     max-width: 900px !important; 
     width: 90% !important;
-    padding: 80px 20px 60px 20px !important; 
+    padding: 60px 20px 60px 20px !important; 
     margin: 0 auto !important; 
     float: none !important; 
     clear: both !important;
