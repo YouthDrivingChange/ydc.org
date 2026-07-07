@@ -86,11 +86,21 @@ layout: default
   </div>
 
   <!-- Action Call Buttons Container -->
+  <!-- Action Call Buttons Container -->
   <div style="text-align: center; width: 100%; margin-bottom: 20px;">
     <h3 style="color: #333; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.02em;">Join the Momentum</h3>
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-      <a href="https://events.nationalmssociety.org/teams/ydc" class="btn-donate">Donate to BikeMS</a>
-      <a href="https://events.nationalmssociety.org/index.cfm?fuseaction=register.start&eventID=2736&teamID=100250" class="btn-register">Register for the Event</a>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 35px;">
+      <a href="https://events.nationalmssociety.org/index.cfm?fuseaction=register.start&eventID=2736&teamID=100250" class="btn-register">Register to Ride</a>
+      <a href="https://events.nationalmssociety.org/teams/ydc" class="btn-donate">Support Our Team</a>
     </div>
+
+    <!-- New Call to Action Message -->
+    <div style="max-width: 650px; margin: 0 auto; padding: 0 10px;">
+      <h4 style="color: #333; font-weight: 700; font-size: 1.25rem; margin-top: 0; margin-bottom: 12px;">Be Part of the Change</h4>
+      <p style="font-size: 1.05rem; color: #666; line-height: 1.7; margin: 0;">
+        What started as a family tradition has grown into a mission to protect our friends, families, and community. The fight to cure MS requires all of us. Join YouthDrivingChange today, help us fuel breakthrough research, spread powerful awareness, and bring us one step closer to a cure.
+      </p>
+    </div>
+  </div>
   </div>
 </section>
