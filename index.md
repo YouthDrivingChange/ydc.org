@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- Complete Style Overhaul -->
 <style>
   /* Fix the default layout spacing and completely hide theme clutter/sidebar constraints */
   header, footer, .sidebar, .project-links, #forkongithub { display: none !important; }
@@ -79,6 +80,7 @@ layout: default
   .btn-donate:hover, .btn-register:hover { transform: translateY(-2px); text-decoration: none; }
 </style>
 
+<!-- Clean White Navigation Bar Layer -->
 <div class="custom-nav">
   <div class="nav-links-left">
     <a href="./index.html" style="color: #1e73be;">HOME</a>
@@ -91,10 +93,13 @@ layout: default
   </div>
 </div>
 
+<!-- Main Content Area -->
 <section>
   <div class="hero-container">
+    <!-- Huge Background Watermark Image -->
     <img src="./logo.png" class="hero-watermark" alt="">
     
+    <!-- Foreground Content Layer -->
     <div class="hero-content">
       <h1 class="main-headline">YouthDrivingChange</h1>
       <p class="main-subheadline">Accelerating the fight for a cure, one mile at a time.</p>
@@ -106,6 +111,7 @@ layout: default
     </div>
   </div>
 
+  <!-- Bottom Narrative Box Card -->
   <div style="background: white; border-radius: 12px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); line-height: 1.8; color: #444; width: 100%; box-sizing: border-box; text-align: left; margin-bottom: 30px;">
     <h3 style="color: #333; font-weight: 700; margin-top: 0; font-size: 1.5rem; letter-spacing: -0.02em;">Driven by Youth. Fueled by Community.</h3>
     <p style="font-size: 1.05rem; color: #555; margin-bottom: 20px;">
@@ -116,9 +122,10 @@ layout: default
     </p>
   </div>
 
-  <div style="text-align: center; width: 100%;">
-    <h3 style="color: #333; font-weight: 700; font-size: 1.4rem; margin-bottom: 15px;">Subscribe for Campaign Milestones</h3>
-    <div style="display: flex; justify-content: center; width: 100%;">
+  <!-- Integrated Substack Section Styled as a Clean Card -->
+  <div style="background: white; border-radius: 12px; padding: 40px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; width: 100%; box-sizing: border-box;">
+    <h3 style="color: #333; font-weight: 700; font-size: 1.6rem; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.02em;">Subscribe for Campaign Milestones</h3>
+    <div style="display: flex; justify-content: center; width: 100%; overflow: hidden;">
       <iframe src="https://youthdrivingchange.substack.com/embed" width="480" height="320" style="border: none; background: transparent;" frameborder="0" scrolling="no"></iframe>
     </div>
   </div>
