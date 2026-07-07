@@ -49,7 +49,7 @@ layout: default
     <a href="./index.html">HOME</a>
     <a href="./about.html" style="color: #1e73be;">ABOUT US</a>
     <a href="./events.html">UPCOMING EVENTS</a>
-    <a href="./Newsletter.html">NEWSLETTER</a>
+    <a href="./newsletter.html">NEWSLETTER</a>
   </div>
   <div>
     <a href="https://events.nationalmssociety.org/teams/ydc" style="background-color: #ff6600; color: white; padding: 9px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em;">DONATE</a>
