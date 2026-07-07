@@ -2,46 +2,72 @@
 layout: default
 ---
 
-<!-- Core Navigation Menu Links -->
-<div style="background-color: white; padding: 15px 40px; border-bottom: 1px solid #eaeaea; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0; left: 0; right: 0; z-index: 9999; font-family: sans-serif; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+<!-- Complete Style Overhaul -->
+<style>
+  /* Fix the default layout spacing and completely hide theme clutter/sidebar constraints */
+  header, footer, .sidebar, .project-links, #forkongithub { display: none !important; }
+  body { background-color: #f7f9fc; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; width: 100%; }
+  
+  /* Blows open the theme's default layout container box to span 100% of the screen width */
+  .wrapper { 
+    max-width: 100% !important; 
+    width: 100% !important;
+    margin: 0 !important; 
+    padding: 0 !important;
+    display: block !important;
+  }
+  
+  /* Absolute Center Force: Centers the layout container right in the middle of the wide viewport */
+  section { 
+    max-width: 900px !important; 
+    width: 90% !important;
+    padding: 130px 20px 60px 20px !important; 
+    margin: 0 auto !important; 
+    float: none !important; 
+    clear: both !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Top Nav Bar Styling */
+  .custom-nav { background-color: white; padding: 15px 40px; border-bottom: 1px solid #eaeaea; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0; left: 0; right: 0; z-index: 9999; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+  .nav-links-left { display: flex; gap: 35px; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; }
+  .nav-links-left a { color: #333; text-decoration: none; transition: color 0.2s; }
+  .nav-links-left a:hover { color: #1e73be; }
+</style>
+
+<!-- Clean White Navigation Bar Layer -->
+<div class="custom-nav">
   <div class="nav-links-left">
-  <a href="./index.html">HOME</a>
-  <a href="./about.html" style="color: #1e73be;">ABOUT US</a>
-  <a href="./events.html">UPCOMING EVENTS</a>
-  <a href="./Newsletter.html">NEWSLETTER</a>
-</div>
+    <a href="./index.html">HOME</a>
+    <a href="./about.html" style="color: #1e73be;">ABOUT US</a>
+    <a href="./events.html">UPCOMING EVENTS</a>
+    <a href="./Newsletter.html">NEWSLETTER</a>
+  </div>
   <div>
-    <a href="https://events.nationalmssociety.org/teams/ydc" style="background-color: #ff6600; color: white; padding: 9px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.85rem; display: inline-block;">DONATE</a>
+    <a href="https://events.nationalmssociety.org/teams/ydc" style="background-color: #ff6600; color: white; padding: 9px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em;">DONATE</a>
   </div>
 </div>
 
-<!-- Main Content Area -->
-<div style="margin-top: 110px; max-width: 800px; margin-left: auto; margin-right: auto; padding: 20px; font-family: sans-serif; line-height: 1.8; color: #444;">
-  
-  <h2 style="color: #1e73be; font-weight: 800; font-size: 2.2rem; margin-bottom: 25px;">About YouthDrivingChange</h2>
-  
-  <p style="font-size: 1.1rem; font-weight: 600; color: #333; line-height: 1.6; margin-bottom: 25px;">
-    YouthDrivingChange is dedicated to changing lives by raising critical funds for multiple sclerosis research, accelerating the fight for a cure, and spreading powerful awareness throughout our community.
-  </p>
-
-  <h3 style="color: #333; font-weight: 700; margin-top: 30px;">Our Story</h3>
-  <p>YouthDrivingChange started long before a team was ever officially formed. Growing up, I watched my mom ride in the BikeMS event year after year, witnessing firsthand the incredible power of a community uniting for a cure.</p>
-  <p>In 2022, the moment I was finally old enough to start a team of my own, I didn't hesitate. What began as a mission rooted in family tradition has since become deeply personal. Today, YouthDrivingChange has raised over $188,000 and I have close friends who are living with multiple sclerosis. Seeing their daily strength fuels our team's urgency. We aren't just riding for a cause anymore, we are riding for our friends, our families, and a future free of MS.</p>
-
-  <hr style="border: 0; border-top: 1px solid #eaeaea; margin: 35px 0;">
-
-  <h3 style="color: #333; font-weight: 700;">Making a Global Impact</h3>
-  <p>The National MS Society has supported nearly 450,000 people since 2017 with highly skilled, compassionate professionals who help people with MS get the resources, information, and support they need. They have established nearly 400 partnerships with high-quality MS care centers and have invested more than $1.1 billion in MS research since 1946.</p>
-
-  <!-- Call To Action Box -->
-  <div style="background-color: #f4f7fa; border-radius: 8px; padding: 30px; margin-top: 40px; border-left: 5px solid #1e73be;">
-    <h3 style="color: #1e73be; font-weight: 700; margin-top: 0; margin-bottom: 10px;">Be Part of the Change</h3>
-    <p style="margin-bottom: 25px;">What started as a family tradition has grown into a mission to protect our friends, families, and community. The fight to cure MS requires all of us. Join YouthDrivingChange today, help us fuel breakthrough research, spread powerful awareness, and bring us one step closer to a cure.</p>
+<!-- Main Content Area Container styled as a clean card -->
+<section>
+  <div style="background: white; border-radius: 12px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); line-height: 1.8; color: #444; width: 100%; box-sizing: border-box; text-align: left;">
+    <h1 style="color: #1e73be; font-size: 2.5rem; font-weight: 800; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.02em;">About YouthDrivingChange</h1>
     
-    <div style="display: flex; flex-wrap: wrap; gap: 15px;">
-      <a href="https://events.nationalmssociety.org/index.cfm?fuseaction=register.start&eventID=2736&teamID=100250" style="background-color: #1e73be; color: white !important; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 6px; font-size: 1rem; box-shadow: 0 4px 10px rgba(30, 115, 190, 0.2);">Register to Ride</a>
-      <a href="https://events.nationalmssociety.org/teams/ydc" style="background-color: #ff6600; color: white !important; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 6px; font-size: 1rem; box-shadow: 0 4px 10px rgba(255, 102, 0, 0.2);">Support Our Team</a>
-    </div>
+    <p style="font-size: 1.15rem; font-weight: 600; color: #333; line-height: 1.6; margin-bottom: 25px;">
+      YouthDrivingChange is dedicated to changing lives by raising critical funds for multiple sclerosis research, accelerating the fight for a cure, and spreading powerful awareness throughout our community.
+    </p>
+    
+    <h3 style="color: #333; font-weight: 700; font-size: 1.4rem; margin-top: 30px; margin-bottom: 15px;">Our Story</h3>
+    
+    <p style="font-size: 1.05rem; color: #555; margin-bottom: 20px;">
+      YouthDrivingChange started long before a team was ever officially formed. Growing up, I watched my mom ride in the BikeMS event year after year, witnessing firsthand the incredible power of a community uniting for a cure.
+    </p>
+    
+    <p style="font-size: 1.05rem; color: #555; margin-bottom: 0;">
+      In 2022, the moment I was finally old enough to start a team of my own, I didn't hesitate. What began as a mission rooted in family tradition has since become deeply personal. Today, YouthDrivingChange has raised over $188,000 and I have close friends who are living with multiple sclerosis. Every dollar raised, every mile logged, brings us closer to a world free of MS.
+    </p>
   </div>
-
-</div>
+</section>
