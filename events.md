@@ -149,4 +149,9 @@ layout: default
     </div>
 
   </div>
+
+  <!-- Contact Callout -->
+  <div style="background: #eef4fa; border-left: 4px solid #1e73be; border-radius: 4px 12px 12px 4px; padding: 20px; text-align: center; width: 100%; box-sizing: border-box; color: #333; font-size: 1.05rem;">
+    <strong>Email <a href="mailto:ydcms@pm.me" style="color: #1e73be; text-decoration: none;">ydcms@pm.me</a> for an itinerary and more details.</strong>
+  </div>
 </section>
