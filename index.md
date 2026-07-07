@@ -2,7 +2,6 @@
 layout: default
 ---
 
-<!-- Complete Style Overhaul -->
 <style>
   /* Fix the default layout spacing and completely hide theme clutter/sidebar constraints */
   header, footer, .sidebar, .project-links, #forkongithub { display: none !important; }
@@ -78,15 +77,17 @@ layout: default
   .btn-donate { background-color: #ff6600; color: white !important; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(255, 102, 0, 0.2); transition: transform 0.2s; margin: 8px; }
   .btn-register { background-color: #1e73be; color: white !important; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(30, 115, 190, 0.2); transition: transform 0.2s; margin: 8px; }
   .btn-donate:hover, .btn-register:hover { transform: translateY(-2px); text-decoration: none; }
+
+  /* Style for inline text links inside narrative box */
+  .narrative-link { color: #1e73be; text-decoration: none; }
+  .narrative-link:hover { text-decoration: underline; }
 </style>
 
-<!-- Clean White Navigation Bar Layer -->
 <div class="custom-nav">
   <div class="nav-links-left">
     <a href="./index.html" style="color: #1e73be;">HOME</a>
     <a href="./about.html">ABOUT US</a>
     <a href="./events.html">UPCOMING EVENTS</a>
-    <!-- FIXED: Changed from external Substack link to local newsletter page -->
     <a href="./newsletter.html">NEWSLETTER</a>
   </div>
   <div>
@@ -94,13 +95,10 @@ layout: default
   </div>
 </div>
 
-<!-- Main Content Area -->
 <section>
   <div class="hero-container">
-    <!-- Huge Background Watermark Image -->
     <img src="./logo.png" class="hero-watermark" alt="">
     
-    <!-- Foreground Content Layer -->
     <div class="hero-content">
       <h1 class="main-headline">YouthDrivingChange</h1>
       <p class="main-subheadline">Accelerating the fight for a cure, one mile at a time.</p>
@@ -112,18 +110,16 @@ layout: default
     </div>
   </div>
 
-  <!-- Bottom Narrative Box Card -->
   <div style="background: white; border-radius: 12px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); line-height: 1.8; color: #444; width: 100%; box-sizing: border-box; text-align: left; margin-bottom: 30px;">
     <h3 style="color: #333; font-weight: 700; margin-top: 0; font-size: 1.5rem; letter-spacing: -0.02em;">Driven by Youth. Fueled by Community.</h3>
     <p style="font-size: 1.05rem; color: #555; margin-bottom: 20px;">
       YouthDrivingChange was founded in 2022 to transform a personal family tradition into a powerful, youth-led movement. We manage, organize, and execute strategic fundraising campaigns and team rides for BikeMS to accelerate the fight for a multiple sclerosis cure.
     </p>
     <p style="font-size: 1.05rem; color: #555; margin-bottom: 0;">
-      Whether you are looking to check out our <strong>Upcoming Events</strong>, read our story in <strong>About Us</strong>, or subscribe to our <strong>Newsletter</strong> for real-time milestones, you are part of the momentum. Explore the navigation links above to find out how you can ride, donate, or help us spread powerful awareness.
+      Whether you are looking to check out our <a href="./events.html" class="narrative-link"><strong>Upcoming Events</strong></a>, read our story in <a href="./about.html" class="narrative-link"><strong>About Us</strong></a>, or subscribe to our <a href="./newsletter.html" class="narrative-link"><strong>Newsletter</strong></a> for real-time milestones, you are part of the momentum. Explore the navigation links above to find out how you can ride, donate, or help us spread powerful awareness.
     </p>
   </div>
 
-  <!-- Integrated Substack Section Styled as a Clean Card -->
   <div style="background: white; border-radius: 12px; padding: 40px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; width: 100%; box-sizing: border-box;">
     <h3 style="color: #333; font-weight: 700; font-size: 1.6rem; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.02em;">Subscribe for Campaign Milestones</h3>
     <div style="display: flex; justify-content: center; width: 100%; overflow: hidden;">
