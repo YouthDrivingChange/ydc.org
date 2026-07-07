@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- Complete Style Overhaul -->
 <style>
   /* Fix the default layout spacing and completely hide theme clutter/sidebar constraints */
   header, footer, .sidebar, .project-links, #forkongithub { display: none !important; }
@@ -33,7 +34,7 @@ layout: default
     clear: both !important;
     display: flex !important;
     flex-direction: column !important;
-    align-items: stretch !important; /* Fixed: allows cards to span full 900px width smoothly */
+    align-items: stretch !important;
     box-sizing: border-box !important;
   }
   
@@ -57,7 +58,7 @@ layout: default
   .nav-links-left a:hover { color: #1e73be; }
   .nav-links-left .active { color: #1e73be; }
 
-  /* Content Cards */
+  /* Content & Call-to-Action Cards */
   .info-card {
     background: white; 
     border-radius: 12px; 
@@ -76,13 +77,11 @@ layout: default
   .info-card p { font-size: 1.05rem; color: #555; margin-bottom: 20px; }
   .info-card p:last-child { margin-bottom: 0; }
 
-  /* Call to Action Section */
-  .cta-section { text-align: center; width: 100%; margin-bottom: 20px; }
-  .cta-section h3 { color: #333; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.02em; }
-  .cta-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 35px; }
-  .cta-message { max-width: 650px; margin: 0 auto; padding: 0 10px; }
-  .cta-message h4 { color: #333; font-weight: 700; font-size: 1.25rem; margin-top: 0; margin-bottom: 12px; }
-  .cta-message p { font-size: 1.05rem; color: #666; line-height: 1.7; margin: 0; }
+  /* New Bottom Call to Action Formatting */
+  .cta-card { text-align: center; }
+  .cta-card h4 { color: #333; font-weight: 700; font-size: 1.5rem; margin-top: 0; margin-bottom: 15px; letter-spacing: -0.02em; }
+  .cta-card p { font-size: 1.05rem; color: #555; line-height: 1.7; max-width: 750px; margin: 0 auto 30px auto; }
+  .cta-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
 
   /* Action Buttons */
   .btn-donate-nav { background-color: #ff6600; color: white !important; padding: 9px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em; }
@@ -92,12 +91,13 @@ layout: default
 
   /* Mobile Adjustments */
   @media (max-width: 768px) {
-    section { padding-top: 180px !important; } /* Gives space if nav links wrap on small screens */
+    section { padding-top: 180px !important; } 
     .custom-nav { padding: 15px 20px; flex-direction: column; gap: 15px; text-align: center; }
     .nav-links-left { gap: 15px; flex-wrap: wrap; justify-content: center; }
   }
 </style>
 
+<!-- Clean White Navigation Bar Layer -->
 <div class="custom-nav">
   <div class="nav-links-left">
     <a href="./index.html">HOME</a>
@@ -110,7 +110,9 @@ layout: default
   </div>
 </div>
 
+<!-- Main Content Area Container -->
 <section>
+  <!-- Our Story Card -->
   <div class="info-card">
     <h1>About YouthDrivingChange</h1>
     
@@ -129,25 +131,23 @@ layout: default
     </p>
   </div>
 
-  <div class="info-card" style="margin-bottom: 40px;">
+  <!-- Broader Impact Card -->
+  <div class="info-card">
     <h3>Broader Impact</h3>
     <p>
       The MS society has supported nearly 450,000 people since 2017 with highly skilled, compassionate professionals who help people with MS get the resources, information, and support they need. They have established nearly 400 partnerships with high-quality MS care centers and have invested more than $1.1 billion in MS research since 1946.
     </p>
   </div>
 
-  <div class="cta-section">
-    <h3>Join the Momentum</h3>
+  <!-- Be Part of the Change Card -->
+  <div class="info-card cta-card">
+    <h4>Be Part of the Change</h4>
+    <p>
+      What started as a family tradition has grown into a mission to protect our friends, families, and community. The fight to cure MS requires all of us. Join YouthDrivingChange today, help us fuel breakthrough research, spread powerful awareness, and bring us one step closer to a cure.
+    </p>
     <div class="cta-buttons">
       <a href="https://events.nationalmssociety.org/index.cfm?fuseaction=register.start&eventID=2736&teamID=100250" class="btn-register">Register to Ride</a>
       <a href="https://events.nationalmssociety.org/teams/ydc" class="btn-donate">Support Our Team</a>
-    </div>
-
-    <div class="cta-message">
-      <h4>Be Part of the Change</h4>
-      <p>
-        What started as a family tradition has grown into a mission to protect our friends, families, and community. The fight to cure MS requires all of us. Join YouthDrivingChange today, help us fuel breakthrough research, spread powerful awareness, and bring us one step closer to a cure.
-      </p>
     </div>
   </div>
 </section>
