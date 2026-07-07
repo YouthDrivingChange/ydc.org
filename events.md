@@ -78,8 +78,13 @@ layout: default
   }
   .event-description {
     color: #555;
-    margin: 0;
+    margin: 0 0 12px 0;
     font-size: 1.05rem;
+  }
+  .event-contact {
+    font-size: 0.95rem;
+    color: #333;
+    display: block;
   }
   .btn-details {
     border: 2px solid #1e73be;
@@ -130,6 +135,7 @@ layout: default
         <span class="event-date">SEPTEMBER 19 - 20, 2026</span>
         <h4 class="event-title">Bike MS: Historic New Bern Ride</h4>
         <p class="event-description">Our primary campaign event of the year. Featuring scenic coastal architecture and a deep-woods gravel trail experience through Croatan National Forest. All routes kick off from Union Point Park.</p>
+        <span class="event-contact"><strong>Email <a href="mailto:ydcms@pm.me" style="color: #1e73be; text-decoration: none;">ydcms@pm.me</a> for an itinerary and more details.</strong></span>
       </div>
       <div>
         <a href="https://events.nationalmssociety.org/2736" target="_blank" class="btn-details">Event Details</a>
@@ -142,16 +148,12 @@ layout: default
         <span class="event-date">NOVEMBER 26, 2026 (THANKSGIVING MORNING)</span>
         <h4 class="event-title">Raleigh Turkey Trot</h4>
         <p class="event-description">Kick off your Thanksgiving morning with the Triangle's favorite holiday tradition. Join us out at Ridgewood Shopping Center to run, walk, and raise critical funds to strike out multiple sclerosis.</p>
+        <span class="event-contact"><strong>Email <a href="mailto:ydcms@pm.me" style="color: #1e73be; text-decoration: none;">ydcms@pm.me</a> for an itinerary and more details.</strong></span>
       </div>
       <div>
         <a href="https://ridgewoodturkeytrot.itsyourrace.com/" target="_blank" class="btn-details">Event Details</a>
       </div>
     </div>
 
-  </div>
-
-  <!-- Contact Callout -->
-  <div style="background: #eef4fa; border-left: 4px solid #1e73be; border-radius: 4px 12px 12px 4px; padding: 20px; text-align: center; width: 100%; box-sizing: border-box; color: #333; font-size: 1.05rem;">
-    <strong>Email <a href="mailto:ydcms@pm.me" style="color: #1e73be; text-decoration: none;">ydcms@pm.me</a> for an itinerary and more details.</strong>
   </div>
 </section>
