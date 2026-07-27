@@ -17,11 +17,11 @@ layout: default
     display: block !important;
   }
   
-  /* Absolute Center Force: Adjusted top padding from 130px to 80px to pull the card up */
+  /* Absolute Center Force */
   section { 
     max-width: 900px !important; 
     width: 90% !important;
-    padding: 80px 20px 60px 20px !important; 
+    padding: 120px 20px 60px 20px !important; 
     margin: 0 auto !important; 
     float: none !important; 
     clear: both !important;
@@ -31,11 +31,46 @@ layout: default
     box-sizing: border-box !important;
   }
   
-  /* Top Nav Bar Styling */
-  .custom-nav { background-color: white; padding: 15px 40px; border-bottom: 1px solid #eaeaea; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0; left: 0; right: 0; z-index: 9999; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-  .nav-links-left { display: flex; gap: 35px; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; }
-  .nav-links-left a { color: #333; text-decoration: none; transition: color 0.2s; }
-  .nav-links-left a:hover { color: #1e73be; }
+  /* Responsive Centered Top Nav Bar Styling */
+  .custom-nav { 
+    background-color: white; 
+    padding: 20px 20px; 
+    border-bottom: 1px solid #eaeaea; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 9999; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+  }
+  .nav-links-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px 25px; 
+    font-weight: 800; 
+    font-size: 0.85rem; 
+    letter-spacing: 0.05em; 
+    text-align: center;
+  }
+  .nav-links-container a { color: #333; text-decoration: none; transition: color 0.2s; }
+  .nav-links-container a:hover { color: #1e73be; }
+
+  /* Desktop View Layout Adjustment */
+  @media (min-width: 850px) {
+    .custom-nav {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 15px 40px;
+    }
+    section {
+      padding-top: 80px !important;
+    }
+  }
   
   /* Action Buttons */
   .btn-donate { background-color: #ff6600; color: white !important; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(255, 102, 0, 0.2); transition: transform 0.2s; margin: 8px; }
@@ -44,7 +79,7 @@ layout: default
 
 <!-- Clean White Navigation Bar Layer -->
 <div class="custom-nav">
-  <div class="nav-links-left">
+  <div class="nav-links-container">
     <a href="./index.html">HOME</a>
     <a href="./about.html">ABOUT US</a>
     <a href="./events.html">UPCOMING EVENTS</a>
@@ -52,7 +87,7 @@ layout: default
     <a href="./newsletter.html" style="color: #1e73be;">NEWSLETTER</a>
   </div>
   <div>
-    <a href="https://events.nationalmssociety.org/teams/ydc" style="background-color: #ff6600; color: white; padding: 9px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em;">DONATE</a>
+    <a href="https://events.nationalmssociety.org/teams/ydc" style="background-color: #ff6600; color: white; padding: 10px 28px; text-decoration: none; font-weight: 800; border-radius: 6px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em;">DONATE</a>
   </div>
 </div>
 
