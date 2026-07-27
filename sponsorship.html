@@ -3,10 +3,11 @@ layout: default
 ---
 
 <style>
-  /* Reset and theme overrides */
+  /* Hide Jekyll default headers, footers, and sidebars */
   header, footer, .sidebar, .project-links, #forkongithub { display: none !important; }
   body { background-color: #f7f9fc; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; width: 100%; }
   
+  /* Expand layout to 100% screen width */
   .wrapper { 
     max-width: 100% !important; 
     width: 100% !important;
@@ -15,6 +16,7 @@ layout: default
     display: block !important;
   }
   
+  /* Center Content Container */
   section { 
     max-width: 900px !important; 
     width: 90% !important;
@@ -28,13 +30,13 @@ layout: default
     box-sizing: border-box !important;
   }
   
-  /* Top Nav Bar Styling */
+  /* Top Navigation Styling */
   .custom-nav { background-color: white; padding: 15px 40px; border-bottom: 1px solid #eaeaea; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0; left: 0; right: 0; z-index: 9999; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
   .nav-links-left { display: flex; gap: 30px; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; }
   .nav-links-left a { color: #333; text-decoration: none; transition: color 0.2s; }
   .nav-links-left a:hover { color: #1e73be; }
 
-  /* Content Card */
+  /* Content Card Styling */
   .content-card {
     background: white; 
     border-radius: 12px; 
@@ -48,17 +50,43 @@ layout: default
     margin-bottom: 30px;
   }
 
-  /* Sponsorship Level Grid */
-  .sponsor-tier {
-    border-left: 4px solid #1e73be;
-    background: #f8f9fa;
-    padding: 15px 20px;
-    margin-bottom: 12px;
-    border-radius: 0 8px 8px 0;
+  /* Sponsorship Tier Card Styling */
+  .tier-card {
+    border: 1px solid #eaeaea;
+    border-left: 5px solid #1e73be;
+    border-radius: 8px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    background: #fafbfc;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .tier-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  }
+  .tier-title {
+    color: #1e73be;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 0 5px 0;
+    letter-spacing: -0.02em;
+  }
+  .tier-amount {
+    color: #ff6600;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+  }
+  .tier-benefits {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.7;
   }
 </style>
 
-<!-- Navigation Bar -->
 <div class="custom-nav">
   <div class="nav-links-left">
     <a href="./index.html">HOME</a>
@@ -74,60 +102,99 @@ layout: default
 
 <section style="margin-top: 40px;">
   
-  <!-- Header Card -->
+  <!-- Header Block -->
   <div class="content-card">
     <h2 style="color: #1e73be; font-size: 2.5rem; font-weight: 800; margin: 0 0 15px 0; letter-spacing: -0.03em;">Corporate Sponsorship Opportunities</h2>
     <p style="font-size: 1.1rem; color: #555; margin: 0;">
-      Organizations and individuals interested in providing additional support can participate through our structured corporate sponsorship levels. Corporate sponsorships directly advance our fundraising efforts for the National Multiple Sclerosis Society and demonstrate a shared commitment to improving the lives of people affected by multiple sclerosis.
+      Organizations and individuals interested in providing additional support can participate through our sponsorship packages. Corporate sponsorships advance our team's fundraising efforts in support of the National Multiple Sclerosis Society and showcase a commitment to funding critical research and community support.
     </p>
   </div>
 
-  <!-- Tiers & Details Card -->
+  <!-- Tier List Container -->
   <div class="content-card">
-    <h3 style="color: #ff6600; font-size: 1.4rem; margin-top: 0; margin-bottom: 20px;">Sponsorship Levels</h3>
-    
-    <div class="sponsor-tier">
-      <strong style="color: #1e73be; font-size: 1.1rem;">Legacy Sponsor</strong> — <span style="color: #333; font-weight: 700;">$10,000 and above</span>
-    </div>
-    <div class="sponsor-tier">
-      <strong style="color: #1e73be; font-size: 1.1rem;">Leadership Sponsor</strong> — <span style="color: #333; font-weight: 700;">$5,000 to $9,999</span>
-    </div>
-    <div class="sponsor-tier">
-      <strong style="color: #1e73be; font-size: 1.1rem;">Impact Sponsor</strong> — <span style="color: #333; font-weight: 700;">$2,500 to $4,999</span>
-    </div>
-    <div class="sponsor-tier">
-      <strong style="color: #1e73be; font-size: 1.1rem;">Partner Sponsor</strong> — <span style="color: #333; font-weight: 700;">$1,000 to $2,499</span>
-    </div>
-    <div class="sponsor-tier">
-      <strong style="color: #1e73be; font-size: 1.1rem;">Friend of the Cause</strong> — <span style="color: #333; font-weight: 700;">Up to $999</span>
+    <h3 style="color: #333; font-weight: 700; margin-top: 0; font-size: 1.5rem; letter-spacing: -0.02em; border-bottom: 2px solid #f7f9fc; padding-bottom: 15px; margin-bottom: 25px;">Sponsorship Levels & Benefits</h3>
+
+    <!-- Friend of the Cause -->
+    <div class="tier-card" style="border-left-color: #718096;">
+      <h4 class="tier-title" style="color: #4a5568;">Friend of the Cause</h4>
+      <span class="tier-amount">Up to $999</span>
+      <ul class="tier-benefits">
+        <li>Recognition on the event website</li>
+        <li>Recognition in the event program</li>
+        <li>Team photo following the event</li>
+        <li>Recognition in post-event thank-you communications</li>
+      </ul>
     </div>
 
-    <h3 style="color: #1e73be; font-size: 1.4rem; margin-top: 35px; border-bottom: 2px solid #eee; padding-bottom: 8px;">How to Submit Payment</h3>
-    
-    <p><strong>Donate Online:</strong><br>
-    Visit our official team page: <a href="https://events.nationalmssociety.org/teams/ydc" target="_blank" style="color: #1e73be; font-weight: bold;">Youth Driving Change Team Page</a></p>
+    <!-- Partner Sponsor -->
+    <div class="tier-card" style="border-left-color: #319795;">
+      <h4 class="tier-title" style="color: #2c7a7b;">Partner Sponsor</h4>
+      <span class="tier-amount">$1,000 – $2,499</span>
+      <p style="margin: 0 0 10px 0; font-weight: 600; color: #333;">Includes all Friend of the Team benefits, plus:</p>
+      <ul class="tier-benefits">
+        <li>Recognition on sponsor banner</li>
+        <li>Logo on sponsor slideshow</li>
+        <li>Recognition during opening remarks</li>
+        <li>Recognition in event newsletter</li>
+        <li>Logo displayed on the event website</li>
+      </ul>
+    </div>
 
-    <p><strong>Donate by Check:</strong><br>
-    Checks should be made payable to the <em>National MS Society</em> with <em>'Youth Driving Change'</em> on the memo line and mailed to:</p>
-    <blockquote style="margin: 10px 0; padding-left: 15px; border-left: 3px solid #ccc; color: #555;">
-      North Carolina Joint Underwriting Association<br>
-      Attn: Annette Alford<br>
-      751 Corporate Center Drive, Suite 200<br>
-      Raleigh, NC 27607
-    </blockquote>
+    <!-- Impact Sponsor -->
+    <div class="tier-card" style="border-left-color: #1e73be;">
+      <h4 class="tier-title">Impact Sponsor</h4>
+      <span class="tier-amount">$2,500 – $4,999</span>
+      <p style="margin: 0 0 10px 0; font-weight: 600; color: #333;">Includes all Partner Sponsor benefits, plus:</p>
+      <ul class="tier-benefits">
+        <li>Logo displayed on the event T-shirt</li>
+        <li>Recognition during the educational seminar and dinner</li>
+        <li>Opportunity to include a promotional item in attendee welcome bags</li>
+        <li>Enhanced logo placement on sponsor signage</li>
+        <li>Recognition on event presentation slides</li>
+      </ul>
+    </div>
 
-    <p style="margin-top: 20px;">
-      If you are interested in becoming a corporate sponsor or would like to contribute via <strong>ACH or wire transfer</strong>, please contact us directly so we can ensure your contribution is properly credited and acknowledged:
-    </p>
+    <!-- Leadership Sponsor -->
+    <div class="tier-card" style="border-left-color: #805ad5;">
+      <h4 class="tier-title" style="color: #6b46c1;">Leadership Sponsor</h4>
+      <span class="tier-amount">$5,000 – $9,999</span>
+      <p style="margin: 0 0 10px 0; font-weight: 600; color: #333;">Includes all Impact Sponsor benefits, plus:</p>
+      <ul class="tier-benefits">
+        <li>Prominent logo placement on event signage</li>
+        <li>Priority recognition during major event activities</li>
+        <li>Enlarged logo on the event T-shirt</li>
+        <li>Premium logo placement on the event website</li>
+        <li>Reserved seating at the dinner</li>
+        <li>Recognition during both the opening and closing ceremonies</li>
+      </ul>
+    </div>
 
-    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 20px;">
-      <p style="margin: 0 0 10px 0;">
-        <strong>Robert Schwitzgebel</strong> — <a href="mailto:wrhardy@pm.me" style="color: #1e73be;">wrhardy@pm.me</a>
+    <!-- Legacy Sponsor -->
+    <div class="tier-card" style="border-left-color: #ff6600; background-color: #fffaf5;">
+      <h4 class="tier-title" style="color: #dd6b20;">Legacy Sponsor</h4>
+      <span class="tier-amount">$10,000 and above</span>
+      <p style="margin: 0 0 10px 0; font-weight: 600; color: #333;">Includes all Leadership Sponsor benefits, plus:</p>
+      <ul class="tier-benefits">
+        <li>Exclusive recognition as a Legacy Sponsor</li>
+        <li>Premier logo placement on all event materials</li>
+        <li>Largest logo placement on sponsor banner and event signage</li>
+        <li>Opportunity to briefly welcome attendees during the dinner program</li>
+        <li>Opportunity to sponsor a featured event activity</li>
+        <li>Featured sponsor profile on the event website</li>
+        <li>Team photo with event leadership</li>
+      </ul>
+    </div>
+
+    <!-- Contact Callout -->
+    <div style="background-color: #f0f7ff; padding: 25px; border-radius: 8px; margin-top: 30px; text-align: center;">
+      <h4 style="margin: 0 0 10px 0; color: #1e73be; font-size: 1.2rem;">Interested in Becoming a Sponsor?</h4>
+      <p style="margin: 0 0 15px 0; font-size: 1rem; color: #444;">
+        If you or your organization would like to discuss sponsorship options or contribute via ACH/wire transfer, please reach out to our team.
       </p>
-      <p style="margin: 0;">
-        <strong>Annette Alford</strong> — <a href="mailto:Annette.Alford@ncjua.com" style="color: #1e73be;">Annette.Alford@ncjua.com</a>
+      <p style="margin: 0; font-weight: bold; color: #333;">
+        Email: <a href="mailto:ydcms@pm.me" style="color: #1e73be; text-decoration: none;">ydcms@pm.me</a>
       </p>
     </div>
+
   </div>
-
 </section>
