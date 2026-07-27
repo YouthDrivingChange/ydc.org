@@ -56,7 +56,8 @@ layout: default
     padding: 25px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 20px;
   }
   .event-item:last-child {
     border-bottom: none;
@@ -95,11 +96,17 @@ layout: default
     border-radius: 6px;
     font-size: 0.9rem;
     white-space: nowrap;
+    display: inline-block;
     transition: background 0.2s, color 0.2s;
   }
   .btn-details:hover {
     background-color: #1e73be;
     color: white;
+  }
+
+  /* Responsive adjustment */
+  @media (max-width: 650px) {
+    .event-item { flex-direction: column; }
   }
 </style>
 
@@ -131,11 +138,125 @@ layout: default
     
     <!-- Event 1: Bike MS New Bern -->
     <div class="event-item">
-      <div style="padding-right: 20px;">
+      <div style="padding-right: 20px; width: 100%;">
         <span class="event-date">SEPTEMBER 19 - 20, 2026</span>
         <h4 class="event-title">Bike MS: Historic New Bern Ride</h4>
         <p class="event-description">Our primary campaign event of the year. Featuring scenic coastal architecture and a deep-woods gravel trail experience through Croatan National Forest. All routes kick off from Union Point Park.</p>
         <span class="event-contact"><strong>Email <a href="mailto:ydcms@pm.me" style="color: #1e73be; text-decoration: none;">ydcms@pm.me</a> for an itinerary and more details.</strong></span>
+        
+        <!-- Collapsible Full Event Schedule & Information -->
+        <details style="margin-top: 20px;">
+          <summary style="font-weight: 700; color: #1e73be; cursor: pointer; padding: 10px 0; user-select: none; outline: none;">
+            Click to View Full Event Details, Schedule & Information
+          </summary>
+          
+          <div style="margin-top: 20px; line-height: 1.6; color: #444; border-top: 1px solid #eee; padding-top: 15px;">
+            
+            <!-- Event Schedule -->
+            <h2 style="color: #1e73be; font-size: 1.6rem; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 15px;">Event Schedule</h2>
+            
+            <h3 style="color: #ff6600; font-size: 1.2rem; margin-top: 20px; margin-bottom: 8px;">Friday, September 18, 2026</h3>
+            <p style="margin: 0 0 10px 0;"><strong>9:00 a.m. to 4:00 p.m.</strong> – Optional Educational Seminar <em>(5 North Carolina Insurance Continuing Education credits pending approval)</em><br>
+            <strong>Location:</strong> DoubleTree by Hilton Atlantic Beach Oceanfront, 2717 West Fort Macon Road, Atlantic Beach, North Carolina</p>
+            
+            <h4 style="color: #ff6600; font-size: 1rem; margin-top: 10px; margin-bottom: 5px;">Featured Speakers:</h4>
+            <ul style="margin-top: 0; padding-left: 20px;">
+              <li>Dr. Gleb Tsipursky – The Psychology of AI Adoption at Work</li>
+              <li>Dr. Brenda Wells – Emerging Trends in Insurance</li>
+            </ul>
+            <p style="font-size: 0.95rem; color: #666; margin-bottom: 15px;"><em>Seminar participants will receive a signed copy of Dr. Tsipursky's newly published book, The Psychology of AI Adoption at Work.</em></p>
+            
+            <p style="margin: 15px 0 5px 0;"><strong>6:00 p.m.</strong> – Welcome Reception<br>
+            <strong>Location:</strong> DoubleTree by Hilton Atlantic Beach Oceanfront, 2717 West Fort Macon Road, Atlantic Beach, North Carolina</p>
+
+            <h3 style="color: #ff6600; font-size: 1.2rem; margin-top: 25px; margin-bottom: 8px;">Saturday, September 19, 2026</h3>
+            <h4 style="color: #ff6600; font-size: 1rem; margin-top: 10px; margin-bottom: 5px;">Your Choice:</h4>
+            <ul style="margin-top: 0; padding-left: 20px;">
+              <li>Bike MS: Historic New Bern Ride featuring 30, 50, 75, and 100 mile routes</li>
+              <li>Fishing</li>
+              <li>Paint-Along Workshop: Instructor-led session where you create your own keepsake masterpiece</li>
+              <li>Coastal tours</li>
+              <li>Relaxing day at the beach</li>
+            </ul>
+            
+            <p style="margin: 15px 0 5px 0;"><strong>6:00 p.m.</strong> – Group Dinner at The Dunes Club<br>
+            <strong>Location:</strong> 710 E. Fort Macon Rd, Atlantic Beach, NC<br>
+            <em>Hosted by Guy Carpenter | Entertainment by DJ David Franks of the Band of Oz</em></p>
+
+            <h3 style="color: #ff6600; font-size: 1.2rem; margin-top: 25px; margin-bottom: 8px;">Sunday, September 20, 2026</h3>
+            <p style="margin: 0 0 20px 0;">Return home or enjoy a second day riding in the Bike MS event.</p>
+
+            <!-- Accommodations -->
+            <h2 style="color: #1e73be; font-size: 1.6rem; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 30px;">Accommodations</h2>
+            <p>A block of rooms have been reserved at the DoubleTree by Hilton Atlantic Beach Oceanfront, 2717 West Fort Macon Road, Atlantic Beach, North Carolina. Please contact Annette Alford or me if you would like us to reserve a room in our room block for you.</p>
+
+            <!-- Bike Registration -->
+            <h2 style="color: #1e73be; font-size: 1.6rem; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 30px;">Bike Registration</h2>
+            <p>If you would like to participate in Bike MS: Historic New Bern Ride 2026, simply let me know, and we will register you. Bicycles will be provided for guests traveling from out of town.</p>
+
+            <!-- Educational Seminar Speakers -->
+            <h2 style="color: #1e73be; font-size: 1.6rem; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 30px;">Educational Seminar Speakers</h2>
+            <p><strong>Dr. Gleb Tsipursky</strong> is Chief Executive Officer of Disaster Avoidance Experts and a nationally recognized authority on leadership, artificial intelligence, and the future of work. Called the 'Office Whisperer' by The New York Times, he is the author of seven books, including his newly published <em>The Psychology of AI Adoption at Work</em>. His work has been featured in Harvard Business Review, Fortune, Forbes, Inc., Scientific American, and other national publications.</p>
+            <p><strong>Dr. Brenda Wells</strong> is the Robert F. Bird Distinguished Professor of Risk Management and Insurance and Chair of the Department of Finance and Insurance at East Carolina University. A nationally respected educator, consultant, and speaker, she has spent nearly four decades teaching risk management and insurance while advising organizations throughout the industry on emerging risks, insurance operations, and market trends.</p>
+
+            <!-- Organizations Represented Last Year -->
+            <h2 style="color: #1e73be; font-size: 1.6rem; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 30px;">Organizations Represented Last Year</h2>
+            <p style="font-size: 0.95rem; color: #555;">Last year's participants represented organizations including Bain & Company, Builders Mutual, Burns & Wilcox, Campbell University, Century 21 Real Estate, Creative Adjusting, Disaster Avoidance Experts, East Carolina University, Elder Research, Experience Design International, Guy Carpenter, Hannover Re, Joyce and Associates, Morgan Stanley, Munich Re, NCJUA and NCIUA, North Carolina Gold Buyers, the North Carolina Department of Agriculture, Nowpreneur, Pinnacle Bank, PIPSO, PNC Bank, ProNavigator, Sanderson High School, Solvrays, UNC Charlotte, the University of New Hampshire, ValueCore, and Verisk (ISO).</p>
+
+            <!-- Travel Information -->
+            <h2 style="color: #1e73be; font-size: 1.6rem; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 30px;">Travel Information</h2>
+            <p>Most attendees drive from within North Carolina. Guests flying to the event may choose from Coastal Carolina Regional Airport in New Bern, approximately 45 minutes from the hotel; Wilmington International Airport, approximately 2 hours away; or Raleigh-Durham International Airport, approximately 3.5 hours away, with a wide selection of nonstop flights. We recommend arriving on Thursday if you plan to attend the educational seminar or on Friday if you will participate only in the weekend activities. Departures are recommended on Sunday or Monday. If your schedule allows, you are also welcome to visit our Raleigh office before or after the weekend.</p>
+
+            <div style="background-color: #f8f9fa; border-left: 4px solid #ff6600; padding: 15px; margin: 25px 0;">
+              <h3 style="color: #ff6600; font-size: 1.1rem; margin: 0 0 5px 0;">Please RSVP by August 20</h3>
+              <p style="margin: 0;">If you would like to attend, simply let me know by August 20. We will be happy to coordinate your event registration and hotel accommodations.</p>
+            </div>
+
+            <!-- Contact Information -->
+            <h2 style="color: #1e73be; font-size: 1.6rem; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 30px;">Contact Information</h2>
+            <p style="margin-bottom: 10px;">
+              <strong>Robert Schwitzgebel</strong><br>
+              <a href="mailto:wrhardy@pm.me" style="color: #1e73be;">wrhardy@pm.me</a> | (919) 777-3875
+            </p>
+            <p>
+              <strong>Annette Alford</strong><br>
+              <a href="mailto:Annette.Alford@ncjua.com" style="color: #1e73be;">Annette.Alford@ncjua.com</a> | (919) 333-2857
+            </p>
+
+            <!-- How You Can Help -->
+            <h2 style="color: #1e73be; font-size: 1.6rem; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 30px;">How You Can Help</h2>
+            <p>Whether you join us in New Bern or support the effort from afar, I hope you will consider supporting the National Multiple Sclerosis Society. Every contribution helps fund research, advocacy, and programs that improve the lives of people affected by multiple sclerosis.</p>
+
+            <h3 style="color: #ff6600; font-size: 1.2rem; margin-top: 20px; margin-bottom: 8px;">Personal Donations</h3>
+            <p style="margin-bottom: 10px;"><strong>Donate online:</strong> <a href="https://events.nationalmssociety.org/teams/ydc" target="_blank" style="color: #1e73be; font-weight: bold;">Donate to Youth Driving Change Team</a></p>
+            <p><strong>Donate by Check:</strong><br>
+            Checks should be made payable to the <em>National MS Society</em> with <em>'Youth Driving Change'</em> on the memo line and mailed to:</p>
+            <blockquote style="margin: 10px 0; padding-left: 15px; border-left: 3px solid #ccc; color: #555;">
+              North Carolina Joint Underwriting Association<br>
+              Attn: Annette Alford<br>
+              751 Corporate Center Drive, Suite 200<br>
+              Raleigh, NC 27607
+            </blockquote>
+
+            <h3 style="color: #ff6600; font-size: 1.2rem; margin-top: 25px; margin-bottom: 8px;">Corporate Sponsorship Opportunities</h3>
+            <p>Organizations and individuals interested in providing additional support may also participate through one of the following sponsorship levels. Corporate sponsorships help advance the team's fundraising efforts in support of the National Multiple Sclerosis Society and demonstrate a shared commitment to improving the lives of people affected by multiple sclerosis.</p>
+            <ul style="line-height: 1.8;">
+              <li><strong>Legacy Sponsor</strong> — $10,000 and above</li>
+              <li><strong>Leadership Sponsor</strong> — $5,000 to $9,999</li>
+              <li><strong>Impact Sponsor</strong> — $2,500 to $4,999</li>
+              <li><strong>Partner Sponsor</strong> — $1,000 to $2,499</li>
+              <li><strong>Friend of the Cause</strong> — Up to $999</li>
+            </ul>
+            <p style="font-size: 0.95rem; color: #555;">If you are interested in becoming a corporate sponsor or would like to contribute by ACH or wire transfer, please contact Annette Alford or me. We would be happy to discuss sponsorship opportunities and ensure your contribution is properly credited and acknowledged.</p>
+
+            <div style="background-color: #f0f7ff; padding: 20px; border-radius: 8px; margin-top: 25px; text-align: center;">
+              <p style="margin: 0; font-size: 1.05rem; color: #333; font-weight: 500;">
+                Thank you for your friendship and support. I hope you will join us for a memorable weekend of learning, fellowship, recreation, and service. Together, we can help advance the National Multiple Sclerosis Society's mission and make a meaningful difference in the lives of people affected by multiple sclerosis.
+              </p>
+            </div>
+
+          </div>
+        </details>
       </div>
       <div>
         <a href="https://events.nationalmssociety.org/2736" target="_blank" class="btn-details">Event Details</a>
@@ -144,7 +265,7 @@ layout: default
 
     <!-- Event 2: Raleigh Turkey Trot -->
     <div class="event-item">
-      <div style="padding-right: 20px;">
+      <div style="padding-right: 20px; width: 100%;">
         <span class="event-date">NOVEMBER 26, 2026 (THANKSGIVING MORNING)</span>
         <h4 class="event-title">Raleigh Turkey Trot</h4>
         <p class="event-description">Kick off your Thanksgiving morning with the Triangle's favorite holiday tradition. Join us out at Ridgewood Shopping Center to run, walk, and raise critical funds to strike out multiple sclerosis.</p>
