@@ -24,12 +24,12 @@ layout: default
     display: block !important;
   }
   
-  /* Absolute Center Force: Centers the layout container right in the middle of the wide viewport */
+  /* Absolute Center Force */
   section { 
     max-width: 900px !important; 
     width: 90% !important;
-    padding: 0px 20px 60px 20px !important; 
-    margin: 40px auto 0 auto !important; /* Adjusted top margin to exactly 40px */
+    padding: 120px 20px 60px 20px !important; 
+    margin: 0 auto !important; 
     float: none !important; 
     clear: both !important;
     display: flex !important;
@@ -38,14 +38,15 @@ layout: default
     box-sizing: border-box !important;
   }
   
-  /* Top Nav Bar Styling */
+  /* Responsive Centered Top Nav Bar Styling */
   .custom-nav { 
     background-color: white; 
-    padding: 15px 40px; 
+    padding: 20px 20px; 
     border-bottom: 1px solid #eaeaea; 
     display: flex; 
-    justify-content: space-between; 
+    flex-direction: column;
     align-items: center; 
+    gap: 15px;
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -53,10 +54,30 @@ layout: default
     z-index: 9999; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
   }
-  .nav-links-left { display: flex; gap: 35px; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; }
-  .nav-links-left a { color: #333; text-decoration: none; transition: color 0.2s; }
-  .nav-links-left a:hover { color: #1e73be; }
-  .nav-links-left .active { color: #1e73be; }
+  .nav-links-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px 25px; 
+    font-weight: 800; 
+    font-size: 0.85rem; 
+    letter-spacing: 0.05em; 
+    text-align: center;
+  }
+  .nav-links-container a { color: #333; text-decoration: none; transition: color 0.2s; }
+  .nav-links-container a:hover { color: #1e73be; }
+
+  /* Desktop View Layout Adjustment */
+  @media (min-width: 850px) {
+    .custom-nav {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 15px 40px;
+    }
+    section {
+      padding-top: 80px !important;
+    }
+  }
 
   /* Content & Call-to-Action Cards */
   .info-card {
@@ -71,9 +92,6 @@ layout: default
     text-align: left; 
     margin-bottom: 30px;
   }
-  .info-card:first-of-type {
-    margin-top: 40px !important; /* Forces a crisp 40px gap directly under the nav bar */
-  }
   .info-card h1 { color: #1e73be; font-size: 2.5rem; font-weight: 800; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.02em; }
   .info-card h3 { color: #333; font-weight: 700; font-size: 1.4rem; margin-top: 0; margin-bottom: 15px; }
   .info-card .intro-text { font-size: 1.15rem; font-weight: 600; color: #333; line-height: 1.6; margin-bottom: 0; }
@@ -87,23 +105,14 @@ layout: default
   .cta-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
 
   /* Action Buttons */
-  .btn-donate-nav { background-color: #ff6600; color: white !important; padding: 9px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em; }
   .btn-donate { background-color: #ff6600; color: white !important; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(255, 102, 0, 0.2); transition: transform 0.2s; margin: 8px; }
   .btn-register { background-color: #1e73be; color: white !important; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(30, 115, 190, 0.2); transition: transform 0.2s; margin: 8px; }
   .btn-donate:hover, .btn-register:hover { transform: translateY(-2px); text-decoration: none; }
-
-  /* Mobile Adjustments */
-  @media (max-width: 768px) {
-    section { padding-top: 130px !important; } 
-    .info-card:first-of-type { margin-top: 0px !important; }
-    .custom-nav { padding: 15px 20px; flex-direction: column; gap: 15px; text-align: center; }
-    .nav-links-left { gap: 15px; flex-wrap: wrap; justify-content: center; }
-  }
 </style>
 
 <!-- Clean White Navigation Bar Layer -->
 <div class="custom-nav">
-  <div class="nav-links-left">
+  <div class="nav-links-container">
     <a href="./index.html">HOME</a>
     <a href="./about.html" style="color: #1e73be;">ABOUT US</a>
     <a href="./events.html">UPCOMING EVENTS</a>
@@ -111,14 +120,14 @@ layout: default
     <a href="./newsletter.html">NEWSLETTER</a>
   </div>
   <div>
-    <a href="https://events.nationalmssociety.org/teams/ydc" style="background-color: #ff6600; color: white; padding: 9px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em;">DONATE</a>
+    <a href="https://events.nationalmssociety.org/teams/ydc" style="background-color: #ff6600; color: white; padding: 10px 28px; text-decoration: none; font-weight: 800; border-radius: 6px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em;">DONATE</a>
   </div>
 </div>
 
 <!-- Main Content Area Container -->
 <section>
 
-  <!-- About Card (At the top, title included inside) -->
+  <!-- About Card -->
   <div class="info-card">
     <h1>About YouthDrivingChange</h1>
     <p class="intro-text">
