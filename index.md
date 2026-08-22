@@ -124,6 +124,7 @@ layout: default
     <a href="./about.html">ABOUT US</a>
     <a href="./events.html">UPCOMING EVENTS</a>
     <a href="./sponsorship.html">SPONSORSHIP</a>
+    <a href="./sponsors.html">OUR SPONSORS</a>
     <a href="./newsletter.html">NEWSLETTER</a>
   </div>
   <div>
