@@ -24,12 +24,12 @@ layout: default
     display: block !important;
   }
   
-  /* Absolute Center Force: Centers the layout container right in the middle of the wide viewport */
+  /* Absolute Center Force */
   section { 
     max-width: 900px !important; 
     width: 90% !important;
     padding: 0px 20px 60px 20px !important; 
-    margin: 40px auto 0 auto !important;
+    margin: 40px auto 0 auto !important; 
     float: none !important; 
     clear: both !important;
     display: flex !important;
@@ -38,14 +38,15 @@ layout: default
     box-sizing: border-box !important;
   }
   
-  /* Top Nav Bar Styling */
+  /* Responsive Centered Top Nav Bar Styling */
   .custom-nav { 
     background-color: white; 
-    padding: 15px 40px; 
+    padding: 20px 20px; 
     border-bottom: 1px solid #eaeaea; 
     display: flex; 
-    justify-content: space-between; 
+    flex-direction: column;
     align-items: center; 
+    gap: 15px;
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -53,10 +54,27 @@ layout: default
     z-index: 9999; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
   }
-  .nav-links-left { display: flex; gap: 30px; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; }
-  .nav-links-left a { color: #333; text-decoration: none; transition: color 0.2s; }
-  .nav-links-left a:hover { color: #1e73be; }
-  .nav-links-left .active { color: #1e73be; }
+  .nav-links-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px 25px; 
+    font-weight: 800; 
+    font-size: 0.85rem; 
+    letter-spacing: 0.05em; 
+    text-align: center;
+  }
+  .nav-links-container a { color: #333; text-decoration: none; transition: color 0.2s; }
+  .nav-links-container a:hover { color: #1e73be; }
+
+  /* Desktop View Layout Adjustment */
+  @media (min-width: 850px) {
+    .custom-nav {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 15px 40px;
+    }
+  }
 
   /* Content Cards */
   .info-card {
@@ -108,31 +126,29 @@ layout: default
   .cta-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
 
   /* Action Buttons */
-  .btn-donate-nav { background-color: #ff6600; color: white !important; padding: 9px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em; }
   .btn-contact { background-color: #1e73be; color: white !important; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(30, 115, 190, 0.2); transition: transform 0.2s; margin: 8px; }
   .btn-donate { background-color: #ff6600; color: white !important; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(255, 102, 0, 0.2); transition: transform 0.2s; margin: 8px; }
   .btn-contact:hover, .btn-donate:hover { transform: translateY(-2px); text-decoration: none; }
 
   /* Mobile Adjustments */
-  @media (max-width: 768px) {
+  @media (max-width: 849px) {
     section { padding-top: 130px !important; } 
     .info-card:first-of-type { margin-top: 0px !important; }
-    .custom-nav { padding: 15px 20px; flex-direction: column; gap: 15px; text-align: center; }
-    .nav-links-left { gap: 15px; flex-wrap: wrap; justify-content: center; }
   }
 </style>
 
 <!-- Clean White Navigation Bar Layer -->
 <div class="custom-nav">
-  <div class="nav-links-left">
+  <div class="nav-links-container">
     <a href="./index.html">HOME</a>
     <a href="./about.html">ABOUT US</a>
     <a href="./events.html">UPCOMING EVENTS</a>
-    <a href="./sponsors.html" class="active">OUR SPONSORS</a>
+    <a href="./sponsorship.html">SPONSORSHIP</a>
+    <a href="./sponsors.html" style="color: #1e73be;">OUR SPONSORS</a>
     <a href="./newsletter.html">NEWSLETTER</a>
   </div>
   <div>
-    <a href="https://events.nationalmssociety.org/teams/ydc" class="btn-donate-nav">DONATE</a>
+    <a href="https://events.nationalmssociety.org/teams/ydc" style="background-color: #ff6600; color: white; padding: 10px 28px; text-decoration: none; font-weight: 800; border-radius: 6px; font-size: 0.85rem; display: inline-block; letter-spacing: 0.05em;">DONATE</a>
   </div>
 </div>
 
@@ -177,7 +193,7 @@ layout: default
       Join our mission and make a tangible impact in the fight against multiple sclerosis. Reach out to our team to learn more about sponsorship opportunities.
     </p>
     <div class="cta-buttons">
-      <a href="mailto:contact@youthdrivingchange.org" class="btn-contact">Get in Touch</a>
+      <a href="./sponsorship.html" class="btn-contact">View Sponsorship Packages</a>
       <a href="https://events.nationalmssociety.org/teams/ydc" class="btn-donate">Support Our Team</a>
     </div>
   </div>
