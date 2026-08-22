@@ -28,8 +28,8 @@ layout: default
   section { 
     max-width: 900px !important; 
     width: 90% !important;
-    padding: 120px 20px 60px 20px !important; 
-    margin: 0 auto !important; 
+    padding: 0px 20px 60px 20px !important; 
+    margin: 40px auto 0 auto !important; 
     float: none !important; 
     clear: both !important;
     display: flex !important;
@@ -74,9 +74,6 @@ layout: default
       justify-content: space-between;
       padding: 15px 40px;
     }
-    section {
-      padding-top: 80px !important;
-    }
   }
 
   /* Content & Call-to-Action Cards */
@@ -91,6 +88,9 @@ layout: default
     box-sizing: border-box; 
     text-align: left; 
     margin-bottom: 30px;
+  }
+  .info-card:first-of-type {
+    margin-top: 40px !important;
   }
   .info-card h1 { color: #1e73be; font-size: 2.5rem; font-weight: 800; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.02em; }
   .info-card h3 { color: #333; font-weight: 700; font-size: 1.4rem; margin-top: 0; margin-bottom: 15px; }
@@ -108,6 +108,12 @@ layout: default
   .btn-donate { background-color: #ff6600; color: white !important; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(255, 102, 0, 0.2); transition: transform 0.2s; margin: 8px; }
   .btn-register { background-color: #1e73be; color: white !important; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(30, 115, 190, 0.2); transition: transform 0.2s; margin: 8px; }
   .btn-donate:hover, .btn-register:hover { transform: translateY(-2px); text-decoration: none; }
+
+  /* Mobile Adjustments */
+  @media (max-width: 849px) {
+    section { padding-top: 130px !important; } 
+    .info-card:first-of-type { margin-top: 0px !important; }
+  }
 </style>
 
 <!-- Clean White Navigation Bar Layer -->
@@ -117,6 +123,7 @@ layout: default
     <a href="./about.html" style="color: #1e73be;">ABOUT US</a>
     <a href="./events.html">UPCOMING EVENTS</a>
     <a href="./sponsorship.html">SPONSORSHIP</a>
+    <a href="./sponsors.html">OUR SPONSORS</a>
     <a href="./newsletter.html">NEWSLETTER</a>
   </div>
   <div>
